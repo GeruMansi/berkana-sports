@@ -1,0 +1,53 @@
+$primary-color: #2cdb6a;
+$white-text: #fff;
+$bg-main: #000;
+$bg-second: #4a4a4a;
+
+body {
+    background-color: $bg-main;
+    color: $white-text;
+    font-family: sans-serif;
+}
+
+nav {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 1em;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    
+    .currentRoute {
+        color: $primary-color;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    img {
+        align-self: center;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
