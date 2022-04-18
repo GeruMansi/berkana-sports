@@ -5,22 +5,22 @@ import soga from "../../assets/header/portadaSoga.png";
 
 export const sliderData = [
     {
-        image: {flexion},
+        image: flexion,
         heading: `"los resultados empiezan cuando`,
         desc: 'termina tu zona de confort"',
     },
     {
-        image: {boxing},
+        image: boxing,
         heading: 'el momento perfecto',
         desc: `hoy`,
     },
     {
-        image: {flex},
+        image: flex,
         heading: '',
         desc: '',
     },
     {
-        image: {soga},
+        image: soga,
         heading: '',
         desc: '',
     },
