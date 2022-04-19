@@ -21,9 +21,6 @@ nav {
         align-items: center;
         gap: .5em;
 
-        b {
-            color: $primary-color;
-        }
         img {
             width: 30px;
             margin-right: 10px;
@@ -99,6 +96,10 @@ header {
     bottom: 150px;
 }
 
+.letter-green {
+    color: $primary-color;
+}
+
 .features {
     background-color: $bg-second;
     height: 300px;
@@ -111,34 +112,70 @@ header {
     gap: 2em;
 
     div {
-        text-align: center;
         height: 100%;
 
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
-        gap: 2em;
+        gap: 3em;
+        p{
+            text-align: center;
+            width: 320px;
+            font-family: $roboto-family;
+            font-weight: $medium;
+        }
     }
 
     svg {
-        transform: scale(3);
+        transform: scale(5);
         color: $white-text;
     }
 }
 
 footer {
+    min-height: 300px;
+    width: 100%;
+    margin: 2rem 0;
     display: flex;
     flex-direction: column;
-    gap: 1em;
-
-    img {
-        align-self: center;
+    justify-content: space-around;
+    .footer-brand{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        font-weight: $regular;
+        font-size: 1em;
+        img {
+            align-self: center;
+        }
+        .brand{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: $bold;
+            font-size: 1.3rem;
+        }
     }
 
     ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        gap: 1em;
         list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-around;
+        li{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        li > *{
+            padding: .5rem;
+        }
     }
 }

@@ -8,7 +8,7 @@ import logo from '../assets/logoNavbar.png'
 export default function Navbar() {
     return (
         <nav>
-            <p><img src={logo} alt="logo" />{' '}Berkana <b className="">Sports</b></p>
+            <p><img src={logo} alt="logo" />{' '}Berkana <b className="letter-green">Sports</b></p>
             <ul>
                 <li><NavLink exact to={'/'} activeClassName="currentRoute">INICIO</NavLink></li>
                 <li className='submenuProductos'>

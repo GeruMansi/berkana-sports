@@ -6,8 +6,8 @@ import soga from "../../assets/header/portadaSoga.png";
 export const sliderData = [
     {
         image: flexion,
-        heading: `"los resultados empiezan cuando`,
-        desc: 'termina tu zona de confort"',
+        heading: `los resultados empiezan cuando`,
+        desc: 'termina tu zona de confort',
     },
     {
         image: boxing,

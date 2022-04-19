@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './Slider.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faArrowRight, faQuoteLeftAlt, faQuoteRightAlt } from '@fortawesome/free-solid-svg-icons'
 import { sliderData } from './slider-data'
 
 
@@ -51,8 +51,8 @@ const Slider = () => {
                         <>
                             <img src={slide.image} alt="slide" />
                             <div className="content">
-                                <h2>{slide.heading}</h2>
-                                <h2><b>{slide.desc}</b></h2>
+                                <h2>{slide.heading === '' ? '' : <><FontAwesomeIcon icon={faQuoteLeftAlt} />{' '}{slide.heading}</>}</h2>
+                                <h2><b>{slide.desc}</b>{slide.desc === '' ? '' : <>{' '}<FontAwesomeIcon icon={faQuoteRightAlt} /></>}</h2>
                             </div>
                         </>
                     )}
