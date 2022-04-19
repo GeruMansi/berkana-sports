@@ -4,6 +4,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import React from "react";
 import logo from '../assets/logoNavbar.png'
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -16,16 +17,22 @@ export default function Footer() {
             <div>
                 <ul>
                     <li>
-                        <FontAwesomeIcon icon={faWhatsapp}/>
-                        <p>WhatsApp</p>
+                        <Link>
+                            <FontAwesomeIcon className="icon" icon={faWhatsapp}/>
+                            <p>WhatsApp</p>
+                        </Link>
                     </li>
                     <li>
-                        <FontAwesomeIcon icon={faLocationDot}/>
-                        <p>Martiniano Leguizamon 3343, CABA</p>
+                        <Link>
+                            <FontAwesomeIcon className="icon" icon={faLocationDot}/>
+                            <p>Martiniano Leguizamon 3343, CABA</p>
+                        </Link>
                     </li>
                     <li>
-                        <FontAwesomeIcon icon={faEnvelope}/>
-                        <p>berkana.sports@gmail.com</p>
+                        <Link>
+                            <FontAwesomeIcon className="icon" icon={faEnvelope}/>
+                            <p>berkana.sports@gmail.com</p>
+                        </Link>
                     </li>
                 </ul>
             </div>
