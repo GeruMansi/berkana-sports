@@ -16,8 +16,8 @@ export const sliderData = [
     },
     {
         image: flex,
-        heading: '',
-        desc: '',
+        heading: '1 hora de entrenamiento',
+        desc: 'es el 4% de tu día',
     },
     {
         image: soga,

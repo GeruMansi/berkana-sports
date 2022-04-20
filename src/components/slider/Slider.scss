@@ -2,7 +2,7 @@
 
 .slider{
     width: 100%;
-    height: 70vh;
+    height: 90vh;
     position: relative;
     overflow: hidden;
 }
@@ -49,6 +49,7 @@ b{
     animation: slide-up 1s ease 0.5s;
     animation-fill-mode: forwards;
     visibility: hidden;
+    z-index: 2;
 }
 
 @keyframes slide-up {
@@ -77,18 +78,28 @@ b{
     opacity: 1;
     transform: translateX(0);
 }
+.current::after{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
 
 .current .content {
     opacity: 1;
 }
 
 .arrow {
-    color: #fff;
+    color: $bg-second;
     width: 2rem;
     height: 2rem;
     cursor: pointer;
     position: absolute;
-    top: 35%;
+    top: 45%;
     z-index: 999;
 }
 .arrow:hover {

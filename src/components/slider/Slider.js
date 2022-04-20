@@ -49,7 +49,7 @@ const Slider = () => {
                 >
                     {index === currentSlide && (
                         <>
-                            <img src={slide.image} alt="slide" />
+                            <img className="fondo-con" src={slide.image} alt="slide" />
                             <div className="content">
                                 <h2>{slide.heading === '' ? '' : <><FontAwesomeIcon icon={faQuoteLeftAlt} />{' '}{slide.heading}</>}</h2>
                                 <h2><b>{slide.desc}</b>{slide.desc === '' ? '' : <>{' '}<FontAwesomeIcon icon={faQuoteRightAlt} /></>}</h2>
