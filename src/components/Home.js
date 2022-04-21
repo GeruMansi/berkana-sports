@@ -1,4 +1,6 @@
 import React from "react";
+import Categorias from "./Categorias";
+import Destacados from "./Destacados";
 import Features from "./Features";
 import Slider from "./slider/Slider";
 
@@ -10,6 +12,8 @@ export default function Home() {
                 <Slider />
             </header>
             <Features />
+            <Destacados />
+            <Categorias />
         </>
     )
 }

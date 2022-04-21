@@ -19,7 +19,7 @@ export default function Footer() {
                     <li>
                         <Link>
                             <FontAwesomeIcon className="icon" icon={faWhatsapp}/>
-                            <p>WhatsApp</p>
+                            <p>WhatsApp +54 11 7232 - 0149</p>
                         </Link>
                     </li>
                     <li>
