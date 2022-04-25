@@ -1,20 +1,21 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTruckFast, faCreditCard, faDumbbell } from "@fortawesome/free-solid-svg-icons";
+import pesas from "../assets/pesas.png"
+import tarjeta from "../assets/tarjeta.png"
+import transporte from "../assets/transporte.png"
 
 export default function Features() {
     return (
         <section className="features">
             <div>
-                <FontAwesomeIcon icon={faDumbbell} />
+                <img src={pesas} alt="pesas"/>
                 <p>TODO LO QUE NECESITÁS PARA INICIAR EL CAMBIO QUE DESEÁS EN UN SOLO LUGAR</p>
             </div>
             <div>
-                <FontAwesomeIcon icon={faCreditCard} />
+                <img src={tarjeta} />
                 <p>PAGÁ COMO VOS QUIERAS</p>
             </div>
             <div>
-                <FontAwesomeIcon icon={faTruckFast} />
+                <img src={transporte} />
                 <p>ENVÍOS A TODO EL PAÍS</p>
             </div>
         </section>

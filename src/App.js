@@ -7,6 +7,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
+import Categorias from './components/Categorias';
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
       <Switch>
         <Route exact path='/'>
           <Home />
+        </Route>
+
+        <Route path='/categorias/'>
+          <Categorias />
         </Route>
 
         <Route path={'/catalogo'}>
