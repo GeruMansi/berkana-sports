@@ -1,0 +1,138 @@
+@import "global";
+
+.seccionCatalogo {
+    padding: 2em;
+    margin-top: 2em;
+
+    article:not(:last-child) {
+        margin-bottom: 2em;
+    }
+}
+
+.catalogoDescarga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25em;
+
+    a {
+        background-color: $primary-color;
+        color: $bg-main;
+        font-size: .8em;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: .75em 1.25em;
+        border-radius: 50vh;
+        cursor: pointer;
+    }
+}
+
+.catalogoPedido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10em;
+
+    h2 {
+        padding-bottom: .5em;
+        border-bottom: 4px solid $primary-color;
+    }
+
+    p {
+        padding: 1em;
+        text-transform: uppercase;
+    }
+    
+    a {
+        text-decoration: none;
+        text-align: center;
+        font-weight: 500;
+        border-radius: 50vh;
+        display: inline-block;
+        width: 20vw;
+        margin: 2.5em;
+        padding: 1em;
+        transition:
+            color 400ms ease-in-out,
+            background-color 400ms ease-in-out;
+        
+        &:hover {
+            color: $bg-main;
+        }
+    }
+
+    .catalogoWhatsapp {
+        color: $primary-color;
+        border: 2px solid $primary-color;
+
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+    .catalogoMail {
+        color: $secondary-color;
+        border: 2px solid $secondary-color;
+
+        &:hover {
+            background-color: $secondary-color;
+        }
+    }
+}
+
+.catalogoFormulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2em;
+
+    padding: 2em;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2em;
+
+        padding: 1em;
+
+        p {
+            margin-bottom: .7em;
+        }
+
+        .inputContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            input, textarea {
+                background-color: $bg-main;
+                border: 1px solid $primary-color;
+                resize: none;
+                border-radius: 5px;
+                line-height: 2.5;
+            }
+            textarea {
+                height: 150px;
+            }
+        }
+
+        button {
+            padding: .5em 2em;
+            width: 12vw;
+            background-color: $primary-color;
+            color: $bg-main;
+            font-weight: 800;
+            line-height: 2;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 50vh;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+        }
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
