@@ -980,4 +980,4 @@ export const dataProductos = [
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20la%20caramelera%20de%20ping%20pong",
         destacado:false
     }      
-]
+];

@@ -1,5 +1,6 @@
 @import "global";
 @import "catalogo";
+@import "./components/carousel/cardDestacado";
 
 body {
     background-color: $bg-main;
@@ -142,9 +143,8 @@ header {
 .destacados {
     margin-top: 2em;
     padding: 1em;
-
+    width: 99%;
     text-align: center;
-
     h3 {
         margin-bottom: 1em;
     }
