@@ -1,12 +1,12 @@
 import React from "react";
-import CardProductos from "./CardProductos";
+import MultipleItems from "./carousel/carouselDestacados";
 
-export default function Destacados() {
+const Destacados = () => {
     return (
         <section className="destacados">
             <h3>NUESTROS DESTACADOS</h3>
-            <p>acá va el carousel con los productos</p>
-            <CardProductos />
+            <MultipleItems />
         </section>
     )
 }
+export default Destacados;
