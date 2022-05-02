@@ -1,29 +1,3 @@
-// import React from 'react'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import {  faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-// import CardDestacados from './cardDestacados'
-
-// const CarouselDestacados = ({products}) => {
-//   return (
-//     <div className="carousel">
-//         <div className="carousel__contenedor">
-//             <button aria-label="Anterior" className="carousel__anterior"><FontAwesomeIcon icon={faChevronLeft} /></button>
-
-//             <div className="carousel__lista">
-//                 {
-//                     products.map((producto) => {return <CardDestacados product={producto} />})
-//                 }
-//             </div>
-
-//             <button aria-label="Siguiente" className="carousel__siguiente"><FontAwesomeIcon icon={faChevronRight} /></button>
-//         </div>
-//         <div role="tablist" className="carousel__indicadores"></div>
-//     </div>
-//   )
-// }
-
-// export default CarouselDestacados
-
 import React, { Component } from "react";
 import Slider from "react-slick";
 import { dataProductos } from "../data-productos";
@@ -36,7 +10,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "flex", alignItems:"center", zIndex: 1}}
+      style={{ ...style, display: "flex", alignItems:"center", right:"-0.5rem", zIndex: 1}}
       onClick={onClick}
     />
   );

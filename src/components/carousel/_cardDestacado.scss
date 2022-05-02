@@ -1,13 +1,18 @@
 .cardDestacado {
+  font-family: $roboto-family;
+  font-weight: $regular;
   background-color: #fff;
   color: black;
-  height: 15rem;
+  height: 16rem;
   width: 10rem;
   margin-left: 1rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content:space-around;
+  border-radius: 4px;
+  position: relative;
   img{
     width: 100%;
     height:auto;
@@ -16,6 +21,27 @@
     height: auto;
     p{
       text-align: center;
+    }
+  }
+  a{
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $bg-main;
+    border-radius: inherit;
+    color: $white-text;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100%;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    &:hover{
+      opacity: 1;
+      
     }
   }
   
