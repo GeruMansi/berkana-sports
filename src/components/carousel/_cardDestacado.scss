@@ -6,6 +6,7 @@
   height: 16rem;
   width: 10rem;
   margin-left: 1rem;
+  padding: 0 1rem;
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
@@ -26,16 +27,15 @@
   a{
     position: absolute;
     opacity: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: .5rem;
+    // left: 0;
     background-color: $bg-main;
     border-radius: inherit;
     color: $white-text;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
-    width: 100%;
+    width: 90%;
     height: 2rem;
     display: grid;
     place-items: center;

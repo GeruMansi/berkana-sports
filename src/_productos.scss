@@ -1,0 +1,52 @@
+@import "global";
+
+.seccionProductos {
+    padding: 2rem;
+    
+    h1 {
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: .25rem;
+
+        margin: auto;
+        margin-bottom: 2rem;
+        width: 80vw;
+        text-align: center;
+
+        li {
+            border: 1px solid $primary-color;
+            border-radius: 50vh;
+            padding: 3px 12px;
+        }
+
+        a {
+            color: $bg-second;
+            background-color: $bg-main;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        a.categoriaActual {
+            color: $primary-color;
+            background-color: $bg-main;
+        }
+    }
+}
+
+.listaProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}

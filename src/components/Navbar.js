@@ -15,23 +15,23 @@ export default function Navbar() {
                     PRODUCTOS <FontAwesomeIcon icon={faAngleDown} />
 
                     <ul className='listaProductos'>
-                        <li><Link>Ver todos los productos</Link></li>
-                        <li><Link>Accesorios</Link></li>
-                        <li><Link>Baseball</Link></li>
-                        <li><Link>Básquet</Link></li>
-                        <li><Link>Boxeo / artes marciales</Link></li>
-                        <li><Link>educación física</Link></li>
-                        <li><Link>entrenamiento funcional</Link></li>
-                        <li><Link>fútbol</Link></li>
-                        <li><Link>gimnasia rítmica</Link></li>
-                        <li><Link>gimansio</Link></li>
-                        <li><Link>handball</Link></li>
-                        <li><Link>hockey</Link></li>
-                        <li><Link>kinesiología</Link></li>
-                        <li><Link>natación</Link></li>
-                        <li><Link>pilates / yoga</Link></li>
-                        <li><Link>tenis</Link></li>
-                        <li><Link>voley</Link></li>
+                        <li><Link to={'/productos/'}>Ver todos los productos</Link></li>
+                        <li><Link to={'/productos/accesorios'}>Accesorios</Link></li>
+                        <li><Link to={'/productos/baseball'}>Baseball</Link></li>
+                        <li><Link to={'/productos/basquet'}>Básquet</Link></li>
+                        <li><Link to={'/productos/boxeo'}>Boxeo / artes marciales</Link></li>
+                        <li><Link to={'/productos/educacion-fisica'}>educación física</Link></li>
+                        <li><Link to={'/productos/entrenamiento-funcional'}>entrenamiento funcional</Link></li>
+                        <li><Link to={'/productos/futbol'}>fútbol</Link></li>
+                        <li><Link to={'/productos/gimnasia-ritmica'}>gimnasia rítmica</Link></li>
+                        <li><Link to={'/productos/gimnasio'}>gimansio</Link></li>
+                        <li><Link to={'/productos/handball'}>handball</Link></li>
+                        <li><Link to={'/productos/hockey'}>hockey</Link></li>
+                        <li><Link to={'/productos/kinesiologia'}>kinesiología</Link></li>
+                        <li><Link to={'/productos/natacion'}>natación</Link></li>
+                        <li><Link to={'/productos/pilates-yoga'}>pilates / yoga</Link></li>
+                        <li><Link to={'/productos/tenis'}>tenis</Link></li>
+                        <li><Link to={'/productos/voley'}>voley</Link></li>
                     </ul>
                 </li>
                 <li><NavLink to={'/catalogo'} activeClassName="currentRoute">CATÁLOGO</NavLink></li>

@@ -50,7 +50,7 @@ export default function Catalogo() {
                     </form>
 
                     <div>
-                        <img src={imgContacto} />
+                        <img src={imgContacto} alt="" />
                     </div>
                 </article>
             </section>

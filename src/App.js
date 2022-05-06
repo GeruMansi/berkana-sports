@@ -7,19 +7,23 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
-import Categorias from './components/Categorias';
+import Productos from './components/Productos';
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Switch>
-        <Route exact path='/'>
+        <Route exact path={'/'}>
           <Home />
         </Route>
 
-        <Route path='/categorias/'>
-          <Categorias />
+        <Route exact path={'/productos/'}>
+          <Productos />
+        </Route>
+
+        <Route path={'/productos/:catId'}>
+          <Productos />
         </Route>
 
         <Route path={'/catalogo'}>

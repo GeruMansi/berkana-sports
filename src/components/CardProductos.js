@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function CardProductos() {
+export default function CardProductos({ item }) {
     return (
         <div className="cardProductos">
-            <img alt="foto del producto" />
-            <p>nombre del producto</p>
+            <img src={item.img} alt="foto del producto" />
+            <p>{item.title}</p>
             <a href="#">COMPRAR</a>
         </div>
     )

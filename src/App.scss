@@ -1,5 +1,6 @@
 @import "global";
 @import "catalogo";
+@import "productos";
 @import "./components/carousel/cardDestacado";
 
 body {
@@ -153,18 +154,23 @@ header {
 }
 
 .cardProductos {
-    width: 200px;
+    width: 180px;
     height: 300px;
     padding: .2em;
     background-color: $white-text;
     color: $bg-main;
+    text-align: center;
     border-radius: 4px;
-    margin-bottom: 2em;
+    transform: scale(.95);
+    transition: transform 100ms ease-in-out;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+    &:hover {
+        transform: scale(1.05);
+    }
     &:hover a {
         opacity: 1;
     }

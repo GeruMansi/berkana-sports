@@ -103,7 +103,7 @@ export const dataProductos = [
         name: "",
         img: "https://res.cloudinary.com/dw87bfoul/image/upload/v1651031791/samples/ecommerce/image_29_szzkev.png",
         title: "Tiraband",
-        category: "kinesio",
+        category: "kinesiologia",
         linkWapp: "https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20el%20Tiraband",
         destacado: true
     },
@@ -112,7 +112,7 @@ export const dataProductos = [
         name: "",
         img: "https://res.cloudinary.com/dw87bfoul/image/upload/v1651031791/samples/ecommerce/image_30_j7icgj.png",
         title: "Relax Ball",
-        category: "kinesio",
+        category: "kinesiologia",
         linkWapp: "https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20las%20RelaxBall",
         destacado: true
     },
@@ -166,7 +166,7 @@ export const dataProductos = [
         name: "",
         img: "https://res.cloudinary.com/dw87bfoul/image/upload/v1651031792/samples/ecommerce/image_37_ycjhwy.png",
         title: "Red Voley",
-        category: "Voley",
+        category: "voley",
         linkWapp: "https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20la%20Red%20de%20Voley",
         destacado: true
     },
@@ -175,7 +175,7 @@ export const dataProductos = [
         name: "",
         img: "https://res.cloudinary.com/dw87bfoul/image/upload/v1651031792/samples/ecommerce/image_38_qg1ooo.png",
         title: "Bolso Core Bag",
-        category: "entrenamiento",
+        category: "entrenamiento-funcional-funcional",
         linkWapp: "https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20el%20Bolso%20Core%20Bag",
         destacado: true
     },
@@ -490,7 +490,7 @@ export const dataProductos = [
         name:"",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031790/samples/ecommerce/image_73_odx0n4.png",
         title:"Set Vallas",
-        category:"educacio-fisica",
+        category:"educacion-fisica",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20el%20Set%20Vallas",
         destacado:false
     },
@@ -499,7 +499,7 @@ export const dataProductos = [
         name:"",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031790/samples/ecommerce/image_74_wvn2ba.png",
         title:"Weight Ball Pulpo",
-        category:"educacio-fisica",
+        category:"educacion-fisica",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20el%20Weight%20Ball%20Pulpo",
         destacado:false
     },
@@ -508,7 +508,7 @@ export const dataProductos = [
         name:"",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031788/samples/ecommerce/image_75_g2h1w4.png",
         title:"Ángulos Demarcatorios",
-        category:"educacio-fisica",
+        category:"educacion-fisica",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20los%20Angulos%20demarcatorios",
         destacado:false
     },
@@ -517,7 +517,7 @@ export const dataProductos = [
         name:"",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031788/samples/ecommerce/image_76_bt4t9j.png",
         title:"Banda Larga Reforzada",
-        category:"entrenamiento",
+        category:"entrenamiento-funcional",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20la%20Banda%20larga%20reforzada",
         destacado:false
     },
@@ -526,7 +526,7 @@ export const dataProductos = [
         name:"",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031781/samples/ecommerce/image_77_udvpen.png",
         title:"Bodyrocker",
-        category:"entrenamiento",
+        category:"entrenamiento-funcional",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20el%20Bodyrocker",
         destacado:false
     },
@@ -535,7 +535,7 @@ export const dataProductos = [
         name:"",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031780/samples/ecommerce/image_78_ew5s16.png",
         title:"Hand Grip",
-        category:"entrenamiento",
+        category:"entrenamiento-funcional",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20el%20Hand%20Grip",
         destacado:false
     },
@@ -544,7 +544,7 @@ export const dataProductos = [
         name:"TSP",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031787/samples/ecommerce/image_79_whw3ar.png",
         title:"Water Bag",
-        category:"entrenamiento",
+        category:"entrenamiento-funcional",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20el%20Water%20bag",
         destacado:false
     },
@@ -553,7 +553,7 @@ export const dataProductos = [
         name:"",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031786/samples/ecommerce/image_80_ineldo.png",
         title:"Ham Roller",
-        category:"entrenamiento",
+        category:"entrenamiento-funcional",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20el%20Ham%20roller",
         destacado:false
     },
@@ -562,7 +562,7 @@ export const dataProductos = [
         name:"",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031789/samples/ecommerce/image_105_oqtqkw.png",
         title:"Pelota de Reacción",
-        category:"entrenamiento",
+        category:"entrenamiento-funcional",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20la%20Pelota%20de%20reaccion",
         destacado:false
     },
@@ -571,7 +571,7 @@ export const dataProductos = [
         name:"TSP",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031785/samples/ecommerce/image_82_tgg3io.png",
         title:"Tobilleras",
-        category:"entrenamiento",
+        category:"entrenamiento-funcional",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20las%20Tobilleras",
         destacado:false
     },
@@ -778,7 +778,7 @@ export const dataProductos = [
         name:"",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031788/samples/ecommerce/image_107_aslmz0.png",
         title:"Barra Terapéutica",
-        category:"kinesio",
+        category:"kinesiologia",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20la%20Barra%20Terapéutica",
         destacado:false
     },
@@ -787,7 +787,7 @@ export const dataProductos = [
         name:"",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031784/samples/ecommerce/image_108_ykd9do.png",
         title:"Cápsula de Masajes",
-        category:"kinesio",
+        category:"kinesiologia",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20la%20cápsula%20Terapéutica",
         destacado:false
     },
@@ -796,7 +796,7 @@ export const dataProductos = [
         name:"",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031783/samples/ecommerce/image_109_sen2ju.png",
         title:"Superband",
-        category:"kinesio",
+        category:"kinesiologia",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20la%20superband",
         destacado:false
     },
@@ -805,7 +805,7 @@ export const dataProductos = [
         name:"",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031782/samples/ecommerce/image_110_ub0x4p.png",
         title:"Rolo de Pie",
-        category:"kinesio",
+        category:"kinesiologia",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20el%20rolo%20de%20pie",
         destacado:false
     },
@@ -814,7 +814,7 @@ export const dataProductos = [
         name:"",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031789/samples/ecommerce/image_111_fu3fwd.png",
         title:"Stick Masajeador",
-        category:"kinesio",
+        category:"kinesiologia",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20el%20stick%20masajeador",
         destacado:false
     },
@@ -823,7 +823,7 @@ export const dataProductos = [
         name:"",
         img:"https://res.cloudinary.com/dw87bfoul/image/upload/v1651031788/samples/ecommerce/image_112_tdaypo.png",
         title:"Kit Estimulación",
-        category:"kinesio",
+        category:"kinesiologia",
         linkWapp:"https://wa.me/5491172320149?text=Hola!%20Me%20interesa%20el%20kit%20estimulación",
         destacado:false
     },
