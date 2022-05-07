@@ -14,6 +14,12 @@
   justify-content:space-around;
   border-radius: 4px;
   position: relative;
+  &:hover img{
+    transform: scale(1.05);
+  }
+  &:hover a {
+      opacity: 1;
+  }
   img{
     width: 100%;
     height:auto;
@@ -39,10 +45,6 @@
     height: 2rem;
     display: grid;
     place-items: center;
-    &:hover{
-      opacity: 1;
-      
-    }
   }
   
 }

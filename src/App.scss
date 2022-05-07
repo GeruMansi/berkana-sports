@@ -251,6 +251,79 @@ header {
     }
 }
 
+/*----------- VENTAS---------*/
+.header-ventas {
+    height: 100vh;
+    background-image: url('./assets/header/portadaMayorista.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 0;
+    .capa-deg {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.678) 0%, rgba(0, 0, 0, 0.431) 100%);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    h1 {
+        color: $primary-color;
+        font-weight: $bold;
+        font-size: 3.5rem;
+    }
+    h1, h2, div, h3 {
+        z-index: 1;
+    }
+    div:last-child {
+        padding: 3em 0em;
+        line-height: 1.8em;
+        p{
+            font-weight: $regular;
+        }
+    }
+    .brand-ventas{
+        margin: 2rem auto;
+        display: flex;
+        font-size: 2rem;
+        font-weight: $bold;
+        z-index: 2;
+        b{
+            font-weight: $regular;
+        }
+        img{
+            width: 4.6rem;
+            bottom: -3pt;
+        }
+    }
+    .catalogoMayorista{
+        z-index: 2;
+        text-align: center;
+        width: 20rem;
+        height: 4rem;
+        background: #F9941D;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            font-weight: $bold;
+            width: 100%;
+            height: 100%;
+            padding: 1.5em 2em;
+            vertical-align: baseline;
+            color: black;
+            z-index: 3999;
+        }
+    }
+}
+
 .footer-brand{
     display: flex;
     flex-direction: column;

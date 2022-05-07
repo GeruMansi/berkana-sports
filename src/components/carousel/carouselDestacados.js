@@ -34,25 +34,34 @@ export default class MultipleItems extends Component {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 8,
-      slidesToScroll: 7,
+      slidesToShow: 9,
+      slidesToScroll: 8,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
       responsive: [
         {
-          breakpoint: 1400,
+          breakpoint: 1485,
           settings: {
-            slidesToShow: 6,
+            slidesToShow: 8,
+            slidesToScroll: 7,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 1298,
+          settings: {
+            slidesToShow: 7,
             slidesToScroll: 6,
             infinite: true,
             dots: true
           }
         },
         {
-          breakpoint: 1250,
+          breakpoint: 1204,
           settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToShow: 6,
+            slidesToScroll: 5,
             infinite: true,
             dots: true
           }
@@ -60,7 +69,7 @@ export default class MultipleItems extends Component {
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 3,
             infinite: true,
             dots: true
@@ -69,7 +78,7 @@ export default class MultipleItems extends Component {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 2,
             initialSlide: 2,
             infinite: true,
