@@ -14,16 +14,24 @@
     flex-direction: column;
     align-items: center;
     gap: 1.25em;
-
+    height: 70vh;
     a {
         background-color: $primary-color;
         color: $bg-main;
-        font-size: .8em;
-        font-weight: 700;
+        font-size: 1.5em;
+        font-weight: $bold;
         text-transform: uppercase;
         padding: .75em 1.25em;
         border-radius: 50vh;
         cursor: pointer;
+    }
+    h2{
+        font-family: $roboto-family;
+        font-weight: $bold;
+        font-size: 2.6rem;
+    }
+    img{
+        width: 16rem;
     }
 }
 
@@ -133,9 +141,35 @@
             place-items: center;
         }
     }
-
-    img {
-        width: 100%;
-        object-fit: cover;
-    }
+    div:last-child{
+        background-image: url('./assets/contacto.png');
+        background-size:cover;
+        background-repeat: no-repeat;
+        position: relative;
+        #logoForm {
+            width: 3em;
+        }
+        &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(to top, rgba(44, 219, 100, 0.6) 0%, rgba(44, 219, 100, 0.18) 100%);
+                }
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        #brand-form{
+            position: absolute;
+            bottom: 15px;
+            left: 25%;
+            right: 25%;
+            background-color:transparent;
+            background: none;
+            z-index: 3;
+        }
 }

@@ -5,7 +5,7 @@ export default function CardCategorias({ categoria, imagen }) {
     return (
         <div className="cardCategorias">
             <img src={imagen} alt="foto categoría"/>
-            <Link to={`/categorias/${categoria}`} >{categoria}</Link>
+            <Link to={`/productos/${categoria}`} >{categoria}</Link>
         </div>
     )
 }

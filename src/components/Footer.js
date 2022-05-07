@@ -19,19 +19,22 @@ export default function Footer() {
                     <li>
                         <Link>
                             <FontAwesomeIcon className="icon" icon={faWhatsapp}/>
-                            <p>WhatsApp +54 11 7232 - 0149</p>
+                            <p>WhatsApp</p>
+                            <p>(+54)11 7232-0149</p>
                         </Link>
                     </li>
                     <li>
                         <Link>
                             <FontAwesomeIcon className="icon" icon={faLocationDot}/>
-                            <p>Martiniano Leguizamon 3343, CABA</p>
+                            <p>Martiniano Leguizamon 3343</p>
+                            <p>CABA</p>
                         </Link>
                     </li>
                     <li>
                         <Link>
                             <FontAwesomeIcon className="icon" icon={faEnvelope}/>
                             <p>berkana.sports@gmail.com</p>
+                            <p>{''}</p>
                         </Link>
                     </li>
                 </ul>
