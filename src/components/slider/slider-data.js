@@ -21,7 +21,7 @@ export const sliderData = [
     },
     {
         image: soga,
-        heading: 'Tu única compretencia',
+        heading: 'Tu única competencia',
         desc: 'eres tú',
     },
 ]
