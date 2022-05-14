@@ -45,6 +45,9 @@
     height: 2rem;
     display: grid;
     place-items: center;
+    &:hover{
+      color: $primary-color;
+    }
   }
   
 }

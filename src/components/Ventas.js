@@ -20,12 +20,29 @@ export default function Ventas() {
                 </div>
             </div>
 
-            <div></div>
-            
-            <div></div>
             <article id="nuestros_productos">
-                segunda parte
-            </article>
+                <h2>NUESTROS PRODUCTOS</h2>
+                <div>
+                    <img src="{}"></img>
+                </div>
+
+                <div className="calidad_precio">
+                    <div>
+                        <h2>LA MEJOR CALIDAD Y PRECIO</h2>
+                        <ul>
+                            <li>AMPLIO STOCK DE PRODUCTOS DE CALIDAD SUPERIOR TANTO NACIONALES COMO IMPORTADOS</li>
+                            <li>PEDIDO MÍNIMO $ 20,000</li>
+                            <li>ENTREGA DESDE 10 DÍAS</li>
+                        </ul>
+                        <a href="#">MÁS INFORMACIÓN</a>
+                    </div>
+
+                    <div>
+                        <img src='{}' alt="desktop"></img>
+                        <img src='{}' alt="mobile"></img>
+                    </div>
+                </div>
+            </article>            
         </section>
 
     )

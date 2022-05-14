@@ -187,6 +187,9 @@ header {
 
         display: grid;
         place-items: center;
+        &:hover{
+            color: #2cdb69;
+        }
     }
 }
 
