@@ -82,12 +82,11 @@ export default function Productos() {
 
     useEffect(() => {
         catId ? setProductosFiltrados(dataProductos.filter(item => item.category === catId)) : setProductosFiltrados(dataProductos)
-        console.log(catId)
     }, [catId])
 
     return (
         <section className="seccionProductos">
-            <h1 style={{color: '#fff'}}>PRODUCTOS</h1>
+            <h1>PRODUCTOS</h1>
             
             <ul>
                 {listaCategorias.map(item => {

@@ -42,7 +42,7 @@ export default class MultipleItems extends Component {
         {
           breakpoint: 1485,
           settings: {
-            slidesToShow: 8,
+            slidesToShow: 7,
             slidesToScroll: 7,
             infinite: true,
             dots: true
@@ -51,7 +51,7 @@ export default class MultipleItems extends Component {
         {
           breakpoint: 1298,
           settings: {
-            slidesToShow: 7,
+            slidesToShow: 6,
             slidesToScroll: 6,
             infinite: true,
             dots: true

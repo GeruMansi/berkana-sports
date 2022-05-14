@@ -1,0 +1,94 @@
+@import 'global';
+
+.seccionContacto {
+    height: 125vh;
+    background-image: url("./assets/contacto2.png");
+    background-size: cover;
+
+    article {
+        width: 100%;
+        height: 100%;
+        background-color: #0008;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .logoFull {
+            display: flex;
+            align-items: center;
+            font-size: 2.3em;
+            grid-area: logo;
+    
+            img {
+                width: 100px;
+            }
+            p {
+                font-weight: 500;
+            }
+            span {
+                font-weight: 400;
+            }
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 4px solid $primary-color;
+        }
+
+        .contactoFormulario {
+            width: 80vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10vw;
+
+            h3 {
+                font-size: 1.75em;
+                margin-bottom: 1em;
+            }
+
+            .inputContainer {
+                display: flex;
+                flex-direction: column;
+                gap: .5em;
+                margin-bottom: 1.2em;
+
+                input, textarea {
+                    color: $white-text;
+                    font-size: 1em;
+                    background-color: transparent;
+                    border: 1px solid $primary-color;
+                    border-radius: 4px;
+                    resize: none;
+                    padding: 10px;
+                }
+                label {
+                    font-size: .8em;
+                }
+            }
+
+            button {
+                background-color: $primary-color;
+                color: $bg-main;
+                font-weight: 600;
+                border: none;
+                border-radius: 25vh;
+                padding: .7em 2.5em;
+                cursor: pointer;
+            }
+
+            .contactoInfo {
+                list-style: none;
+                justify-self: center;
+                align-self: center;
+
+                li {
+                    padding: 1em;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
