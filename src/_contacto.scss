@@ -15,6 +15,7 @@
         justify-content: space-evenly;
 
         .logoFull {
+            font-family: $artegra-family;
             display: flex;
             align-items: center;
             font-size: 2.3em;
@@ -24,10 +25,10 @@
                 width: 100px;
             }
             p {
-                font-weight: 500;
+                font-weight: $bold;
             }
             span {
-                font-weight: 400;
+                font-weight: $regular;
             }
         }
 

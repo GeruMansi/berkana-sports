@@ -3,6 +3,7 @@
 @import "productos";
 @import "contacto";
 @import "./components/carousel/cardDestacado";
+@import "./whatsapp";
 
 body {
     background-color: $bg-main;
@@ -19,7 +20,7 @@ nav {
     align-items: center;
     z-index: 999;
     p{
-        font-family: $roboto-family;
+        font-family: $artegra-family;
         font-size: 1.5em;
         font-weight: $medium;
         display: flex;
@@ -265,7 +266,7 @@ header {
     background-image: url('./assets/header/portadaMayorista.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -299,6 +300,7 @@ header {
         margin: 2rem auto;
         display: flex;
         font-size: 2rem;
+        font-family: $artegra-family;
         font-weight: $bold;
         z-index: 2;
         b{
@@ -321,6 +323,8 @@ header {
         justify-content: center;
         a{
             text-decoration: none;
+            font-size: 1em;
+            font-family: $roboto-condensed-family;
             font-weight: $bold;
             width: 100%;
             height: 100%;
@@ -328,6 +332,86 @@ header {
             vertical-align: baseline;
             color: black;
             z-index: 3999;
+        }
+    }
+}
+#nuestros_productos{
+    .nuestros_productos_h2 {
+        text-align: center;
+        margin: auto;
+    }
+    margin: 0 3%;
+    padding-top: 2rem;
+    .nuestros_productos_img{
+        height:400px;
+        img{
+            margin-top: 2rem;
+            width: 350px;
+            border-radius: 30px;
+        }
+    }
+    h2 {
+        width:fit-content;
+        text-transform: uppercase;
+        border-bottom: 4px solid $primary-color;
+        padding-bottom: 1em;
+        text-shadow: 0 5px 10px #0009;
+    }
+    .calidad_precio{
+        height: 110vh;
+        margin: 10rem auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        // place-items:center;
+        width: 100%;
+        h2{
+            margin-left: 3rem;
+        }
+        .calidad_precio_list{
+            margin: 0 auto;
+            ul{
+                font-family: $roboto-family;
+                font-weight: 600;
+                list-style: none;
+                margin: 2rem 3rem;
+                li{
+                    margin-top: 3rem;
+                }
+                .icon{
+                    margin-right: 1rem;
+                }
+            }
+            a{
+                margin: 0px 3rem;
+                text-decoration: none;
+                background-color: $primary-color;
+                color: $bg-main;
+                font-size: 1em;
+                font-family: $roboto-condensed-family;
+                font-weight: $bold;
+                text-transform: uppercase;
+                padding: .75em 1.25em;
+                border-radius: 50vh;
+                cursor: pointer;
+            }
+        }
+        .calidad_precio_img{
+            top: -8rem;
+            margin:0 auto;
+            border-left: #F9941D;
+            position: relative;
+            .desktop{
+                width: 40rem;
+                right: 50px;
+                z-index: 1;
+            }
+            .mobile{
+                position: absolute;
+                width: 35rem;
+                left: -10rem;
+                top: 10rem;
+                z-index: 2;
+            }
         }
     }
 }
@@ -389,7 +473,7 @@ header {
         align-self: center;
     }
     .brand{
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family:$artegra-family;
         font-weight: $bold;
         font-size: 1.3rem;
     }

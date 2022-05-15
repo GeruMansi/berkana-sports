@@ -4,6 +4,7 @@
 // Font-family Variables
 $roboto-family: 'Roboto', sans-serif;
 $roboto-condensed-family: 'Roboto Condensed', sans-serif;
+$artegra_family: 'Artegra-sans';
 $regular: 400;
 $medium: 500;
 $bold: 700;
@@ -17,3 +18,10 @@ $secondary-color: #f9941d;
 $white-text: #fff;
 $bg-main: #000;
 $bg-second: #4a4a4a;
+
+@font-face {
+  font-family: 'Artegra-sans';
+  src: url("./font/artegraFont/Fontspring-DEMO-artegra_sans-400-regular.otf") format("opentype"),
+  url("./font/artegraFont/Fontspring-DEMO-artegra_sans-sc-700-bold.otf") format("opentype")
+  
+}

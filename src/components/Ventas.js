@@ -1,5 +1,10 @@
 import React from "react";
 import logo from "../assets/Logo.png"
+import image1 from "../assets/sogasMayorista.png"
+import desktop from "../assets/pesasMayorista.png"
+import mobile from "../assets/sentadillaMayorista.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
 
 export default function Ventas() {
     return (
@@ -21,25 +26,25 @@ export default function Ventas() {
             </div>
 
             <article id="nuestros_productos">
-                <h2>NUESTROS PRODUCTOS</h2>
-                <div>
-                    <img src="{}"></img>
+                <h2 className="nuestros_productos_h2">nuestros productos</h2>
+                <div className="nuestros_productos_img">
+                    <img src={image1} alt='ejercicio-sogas'></img>
                 </div>
 
                 <div className="calidad_precio">
-                    <div>
+                    <div className="calidad_precio_list">
                         <h2>LA MEJOR CALIDAD Y PRECIO</h2>
                         <ul>
-                            <li>AMPLIO STOCK DE PRODUCTOS DE CALIDAD SUPERIOR TANTO NACIONALES COMO IMPORTADOS</li>
-                            <li>PEDIDO MÍNIMO $ 20,000</li>
-                            <li>ENTREGA DESDE 10 DÍAS</li>
+                            <li><FontAwesomeIcon className="icon letter-green" icon={faCircleCheck}/>{" "} AMPLIO STOCK DE PRODUCTOS DE CALIDAD SUPERIOR TANTO NACIONALES COMO IMPORTADOS</li>
+                            <li><FontAwesomeIcon className="icon letter-green" icon={faCircleCheck}/>{" "} PEDIDO MÍNIMO $ 20,000</li>
+                            <li><FontAwesomeIcon className="icon letter-green" icon={faCircleCheck}/>{" "} ENTREGA DESDE 10 DÍAS</li>
                         </ul>
                         <a href="#">MÁS INFORMACIÓN</a>
                     </div>
 
-                    <div>
-                        <img src='{}' alt="desktop"></img>
-                        <img src='{}' alt="mobile"></img>
+                    <div className="calidad_precio_img">
+                        <img src={desktop} alt="desktop" className="desktop"></img>
+                        <img src={mobile} alt="mobile" className="mobile"></img>
                     </div>
                 </div>
             </article>            

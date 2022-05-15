@@ -8,10 +8,12 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Productos from './components/Productos';
+import Whatsapp from './whatsapp';
 
 function App() {
   return (
     <BrowserRouter>
+      <Whatsapp />
       <Navbar />
       <Switch>
         <Route exact path={'/'}>
