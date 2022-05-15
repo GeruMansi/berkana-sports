@@ -10,7 +10,7 @@ body {
     color: $white-text;
     font-family: $roboto-family;
 }
-
+// ============== NAV-BAR================= //
 nav {
     font-family: $roboto-condensed-family;
     padding: 1em;
@@ -102,6 +102,7 @@ nav {
         }
     }
 }
+
 header {
     bottom: 150px;
 }
@@ -110,18 +111,22 @@ header {
     color: $primary-color;
 }
 
+//====== FEATURES =======//
 .features {
     background-color: $bg-second;
     height: 300px;
     padding: 40px;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: 1fr;
     align-items: center;
     gap: 2em;
 
     div {
+        width: 33%;
         height: 100%;
 
         display: flex;
@@ -131,9 +136,10 @@ header {
         gap: 3em;
         p{
             text-align: center;
-            width: 320px;
+            width: 100%;
             font-family: $roboto-family;
             font-weight: $medium;
+            font-size: 1em;
         }
 
         &:nth-child(2), &:nth-child(3) {
@@ -147,7 +153,15 @@ header {
         color: $white-text;
     }
 }
-
+@media screen and (max-width:1200px) {
+    .features{
+        width: 100%;
+        div p{
+            font-size: .8em;
+        }
+    }
+}
+// ======== Productos Destacados =======//
 .destacados {
     margin: 2em auto;
     padding: 1em;
@@ -199,6 +213,7 @@ header {
     }
 }
 
+//=========== Categorias ==========//
 .categorias {
     padding: 1em;
 
@@ -209,13 +224,13 @@ header {
 
     .cardContainer {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
         place-items: center;
     }
 }
 
-
 .cardCategorias {
+    margin: 1em auto;
     width: 18rem;
     height: 30rem;
     background-color: $bg-second;
@@ -257,6 +272,9 @@ header {
         display: grid;
         place-items: center;
         z-index: 2;
+        &:hover{
+            color: $primary-color;
+        }
     }
 }
 
