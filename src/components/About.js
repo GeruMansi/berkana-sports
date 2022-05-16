@@ -5,7 +5,7 @@ export default function About() {
     return (
         <section className="seccionAbout">
             <article>
-                <img src={logo} />
+                <img src={logo} alt="logo"/>
                 <h2>nuestros valores</h2>
                 <p>
                     cada persona nace con un potencial que se debe desarrollar. en berkana sports&#174; queremos ayudarte a que lo liberes.<br/>

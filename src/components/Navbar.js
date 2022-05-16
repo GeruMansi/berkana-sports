@@ -71,7 +71,7 @@ export default function Navbar() {
                             <a href='https://facebook.com/berkana.sports' target={'_blank'} rel="noreferrer"><FontAwesomeIcon className="icon" icon={faFacebookSquare} /></a>
                         </li>
                         <li>
-                            <img src={logoBig} />
+                            <img src={logoBig} alt="logo"/>
                         </li>
                     </ul>
                 }

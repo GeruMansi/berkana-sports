@@ -11,11 +11,11 @@ export default function Features() {
                 <p>TODO LO QUE NECESITÁS PARA INICIAR EL CAMBIO QUE DESEÁS EN UN SOLO LUGAR</p>
             </div>
             <div>
-                <img src={tarjeta} />
+                <img src={tarjeta} alt="tarjeta"/>
                 <p>PAGÁ COMO VOS QUIERAS</p>
             </div>
             <div>
-                <img src={transporte} />
+                <img src={transporte} alt="transporte"/>
                 <p>ENVÍOS A TODO EL PAÍS</p>
             </div>
         </section>

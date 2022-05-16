@@ -18,7 +18,7 @@ export default function Ventas() {
                 <h1>EQUIPAMIENTO<br/> DEPORTIVO</h1>
                 <h3>Somos importadores líderes en equipamiento y accesorios deportivos.</h3>
                 <div className="catalogoMayorista">
-                    <a href="https://docs.google.com/spreadsheets/d/1RCILMDSFzcldA3IlnpuFcjCP3-d8VUbjQTIjdsjWTDE/edit?usp=sharing" target="_blank">NUESTROS PRODUCTOS</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1RCILMDSFzcldA3IlnpuFcjCP3-d8VUbjQTIjdsjWTDE/edit?usp=sharing" target="_blank" rel="noreferrer">NUESTROS PRODUCTOS</a>
                 </div>
                 <div>
                     <p>PAGÁ COMO VOS QUIERAS</p>
@@ -33,17 +33,17 @@ export default function Ventas() {
                     <div className="nuestros_productos_img">
                         <img src={body} alt='Kit Body'></img>
                         <h2>kit body</h2>
-                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20te%20consulto%20por%20el%20Kit%20Body" target="_blank" rel="noopener">consultar</a>
+                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20te%20consulto%20por%20el%20Kit%20Body" target="_blank" rel="noopener noreferrer">consultar</a>
                     </div>
                     <div className="nuestros_productos_img">
                         <img src={fitness} alt='Kit Fitness'></img>
                         <h2>kit fitness</h2>
-                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20te%20consulto%20por%20el%20Kit%20Fitness" target="_blank" rel="noopener">consultar</a>
+                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20te%20consulto%20por%20el%20Kit%20Fitness" target="_blank" rel="noopener noreferrer">consultar</a>
                     </div>
                     <div className="nuestros_productos_img">
                         <img src={funcional} alt='Kit Funcional'></img>
                         <h2>kit funcional</h2>
-                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20te%20consulto%20por%20el%20Kit%20Funcional" target="_blank" rel="noopener">consultar</a>
+                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20te%20consulto%20por%20el%20Kit%20Funcional" target="_blank" rel="noopener noreferrer">consultar</a>
                     </div>
                 </div>
 

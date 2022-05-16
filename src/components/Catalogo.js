@@ -18,9 +18,9 @@ export default function Catalogo() {
                     <h2>HACENOS TU PEDIDO</h2>
                     <p>completá el formulario online o contactanos a través de los siguientes canales</p>
                     <div>
-                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20me%20contacto%20para%20obtener%20el%20catalogo" target="_blank" rel="noopener" className="catalogoWhatsapp">WhatsApp</a>
+                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20me%20contacto%20para%20obtener%20el%20catalogo" target="_blank" rel="noreferrer noopener" className="catalogoWhatsapp">WhatsApp</a>
                         <a href="mailto:berkana.sports@gmail.com?
-                        subject=Consulta%20de%20catalogo" target="_blank" rel="noopener" className="catalogoMail">berkanasports@gmail.com</a>
+                        subject=Consulta%20de%20catalogo" target="_blank" rel="noreferrer noopener" className="catalogoMail">berkanasports@gmail.com</a>
                     </div>
                 </article>
 

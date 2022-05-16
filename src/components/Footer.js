@@ -16,14 +16,14 @@ export default function Footer() {
             <div className="footer-iconos">
                 <ul>
                     <li>
-                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20quisiera%20mas%20informacion%20de%20los%20productos" target="_blank">
+                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20quisiera%20mas%20informacion%20de%20los%20productos" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon className="icon" icon={faWhatsapp}/>
                             <p>WhatsApp</p>
                             <p>(+54)11 7232-0149</p>
                         </a>
                     </li>
                     <li>
-                        <a href="https://goo.gl/maps/iWf2ojLvUmXsgTkf8" target="_blank">
+                        <a href="https://goo.gl/maps/iWf2ojLvUmXsgTkf8" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon className="icon" icon={faLocationDot}/>
                             <p>Martiniano Leguizamon 3343</p>
                             <p>CABA</p>
@@ -31,7 +31,7 @@ export default function Footer() {
                     </li>
                     <li>
                         <a href="mailto:berkana.sports@gmail.com?
-                        &subject=Contacto" target="_blank">
+                        &subject=Contacto" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon className="icon" icon={faEnvelope}/>
                             <p>berkana.sports@gmail.com</p>
                             <p>{''}</p>

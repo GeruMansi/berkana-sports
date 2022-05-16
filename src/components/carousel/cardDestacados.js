@@ -8,7 +8,7 @@ const CardDestacados = ({product}) => {
         <h4>{product.name}</h4>
         <p>{product.title}</p>
         </div>
-        <a href={product.linkWapp} target="_blank">COMPRAR</a>
+        <a href={product.linkWapp} target="_blank" rel="noreferrer">COMPRAR</a>
     </div>
   )
 }
