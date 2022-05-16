@@ -20,14 +20,15 @@ b{
     transform: translateX(-50%);
     transition: all .5s ease;
 
-    img {
+    .fondo-con {
         object-fit: cover;
+        width: 100%;
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
     .fondo-con{
-        object-position: left;
+        text-align: center;
     }
 }
 
