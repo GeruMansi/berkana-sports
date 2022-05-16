@@ -2,24 +2,25 @@ import React from "react";
 import logo from '../assets/Logo.png'
 import logoicon from '../assets/logoNavbar.png'
 import imgContacto from '../assets/contacto.png'
+import pdf from "../assets/Catalogo BERKANA SPORTS.pdf"
 
 export default function Catalogo() {
     return (
         <>
             <section className="seccionCatalogo">
                 <article className="catalogoDescarga">
-                    <img src={logo} />
+                    <img src={logo} alt="logo" />
                     <h2>DESCARGÁ NUESTRO CATÁLOGO</h2>
-                    <a href="#" target="_blank">descargar</a>
+                    <a href={pdf} download="Catalogo BERKANA SPORTS.pdf">descargar</a>
                 </article>
 
                 <article className="catalogoPedido">
                     <h2>HACENOS TU PEDIDO</h2>
                     <p>completá el formulario online o contactanos a través de los siguientes canales</p>
                     <div>
-                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20me%20contacto%20para%20obtener%20el%20catalogo" target="_blank" className="catalogoWhatsapp">WhatsApp</a>
+                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20me%20contacto%20para%20obtener%20el%20catalogo" target="_blank" rel="noopener" className="catalogoWhatsapp">WhatsApp</a>
                         <a href="mailto:berkana.sports@gmail.com?
-                        subject=Consulta%20de%20catalogo" target="_blank" className="catalogoMail">berkanasports@gmail.com</a>
+                        subject=Consulta%20de%20catalogo" target="_blank" rel="noopener" className="catalogoMail">berkanasports@gmail.com</a>
                     </div>
                 </article>
 
