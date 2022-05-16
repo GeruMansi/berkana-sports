@@ -10,19 +10,20 @@ export default function Catalogo() {
                 <article className="catalogoDescarga">
                     <img src={logo} />
                     <h2>DESCARGÁ NUESTRO CATÁLOGO</h2>
-                    <a>descargar</a>
+                    <a href="#" target="_blank">descargar</a>
                 </article>
 
                 <article className="catalogoPedido">
                     <h2>HACENOS TU PEDIDO</h2>
                     <p>completá el formulario online o contactanos a través de los siguientes canales</p>
                     <div>
-                        <a href="#" className="catalogoWhatsapp">WhatsApp</a>
-                        <a href="#" className="catalogoMail">berkanasports@gmail.com</a>
+                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20me%20contacto%20para%20obtener%20el%20catalogo" target="_blank" className="catalogoWhatsapp">WhatsApp</a>
+                        <a href="mailto:berkana.sports@gmail.com?
+                        subject=Consulta%20de%20catalogo" target="_blank" className="catalogoMail">berkanasports@gmail.com</a>
                     </div>
                 </article>
 
-                <article className="catalogoFormulario">
+                <article className="catalogoFormulario" id="formulario">
                     <form>
                         <h3>FORMULARIO ONLINE</h3>
                         <p>Completá la siguiente información</p>
@@ -50,7 +51,7 @@ export default function Catalogo() {
                         <button>cotizar</button>
                     </form>
 
-                    <div>
+                    <div className="tarjeta-contacto">
                         <img src={imgContacto} alt="Imagen de contacto" />
                         <div className="footer-brand"  id='brand-form'>
                             <img alt="logo" title="Berkana Sports" src={logoicon} id='logoForm'/>

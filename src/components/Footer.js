@@ -4,7 +4,6 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import React from "react";
 import logo from '../assets/logoNavbar.png'
-import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -14,28 +13,29 @@ export default function Footer() {
                 <p className="brand">Berkana{' '}<b className="letter-green">Sports</b></p>
                 <p>Equipamiento para Hogar y Gimnasios</p>
             </div>
-            <div>
+            <div className="footer-iconos">
                 <ul>
                     <li>
-                        <Link>
+                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20quisiera%20mas%20informacion%20de%20los%20productos" target="_blank">
                             <FontAwesomeIcon className="icon" icon={faWhatsapp}/>
                             <p>WhatsApp</p>
                             <p>(+54)11 7232-0149</p>
-                        </Link>
+                        </a>
                     </li>
                     <li>
-                        <Link>
+                        <a href="https://goo.gl/maps/iWf2ojLvUmXsgTkf8" target="_blank">
                             <FontAwesomeIcon className="icon" icon={faLocationDot}/>
                             <p>Martiniano Leguizamon 3343</p>
                             <p>CABA</p>
-                        </Link>
+                        </a>
                     </li>
                     <li>
-                        <Link>
+                        <a href="mailto:berkana.sports@gmail.com?
+                        &subject=Contacto" target="_blank">
                             <FontAwesomeIcon className="icon" icon={faEnvelope}/>
                             <p>berkana.sports@gmail.com</p>
                             <p>{''}</p>
-                        </Link>
+                        </a>
                     </li>
                 </ul>
             </div>

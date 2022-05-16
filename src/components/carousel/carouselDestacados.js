@@ -40,6 +40,15 @@ export default class MultipleItems extends Component {
       prevArrow: <SamplePrevArrow />,
       responsive: [
         {
+          breakpoint: 1660,
+          settings: {
+            slidesToShow: 8,
+            slidesToScroll: 7,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
           breakpoint: 1485,
           settings: {
             slidesToShow: 7,
@@ -67,7 +76,16 @@ export default class MultipleItems extends Component {
           }
         },
         {
-          breakpoint: 1024,
+          breakpoint: 1145,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 980,
           settings: {
             slidesToShow: 4,
             slidesToScroll: 3,
@@ -76,7 +94,7 @@ export default class MultipleItems extends Component {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 815,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 2,
@@ -86,11 +104,25 @@ export default class MultipleItems extends Component {
           }
         },
         {
+          breakpoint: 650,
+          settings: {
+            className:"center",
+            centerMode: true, 
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
           breakpoint: 480,
           settings: {
+            className:"center",
+            centerMode: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            infinite: true,
+            // infinite: true,
             dots: false
           }
         }
@@ -100,7 +132,7 @@ export default class MultipleItems extends Component {
       <div>
         <Slider {...settings}>
           {dataProductos.map((item) => item.destacado === true ? 
-                <div key={item.id}>
+                <div key={item.id} className="carouselContainerSlide">
                   <CardDestacados product={item} />
                 </div>
            : "" )}

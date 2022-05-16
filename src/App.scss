@@ -161,6 +161,20 @@ header {
         }
     }
 }
+@media screen and (max-width: 655px) {
+    .features{
+        height: auto;
+        padding: 1%;
+        flex-direction: column;
+        div{
+            width: 80%;
+            &:nth-child(2), &:nth-child(3) {
+                border-top: 1px solid #fff2;
+                border-left: none;
+            }
+        }
+    }
+}
 // ======== Productos Destacados =======//
 .destacados {
     margin: 2em auto;
@@ -535,4 +549,15 @@ footer {
             }
         }
     }
+}
+
+@media screen and (max-width:768px) {
+    .footer-iconos p{
+        display: none;
+    }    
+}
+@media screen and (max-width:655px) {
+    .categorias{
+        display: none;
+    }    
 }

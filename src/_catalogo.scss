@@ -21,6 +21,7 @@
         font-size: 1.5em;
         font-weight: $bold;
         text-transform: uppercase;
+        text-decoration: none;
         padding: .75em 1.25em;
         border-radius: 50vh;
         cursor: pointer;
@@ -50,7 +51,7 @@
         padding: 1em;
         text-transform: uppercase;
     }
-    
+
     a {
         text-decoration: none;
         text-align: center;
@@ -63,7 +64,7 @@
         transition:
             color 400ms ease-in-out,
             background-color 400ms ease-in-out;
-        
+
         &:hover {
             color: $bg-main;
         }
@@ -141,10 +142,10 @@
             place-items: center;
         }
     }
-    div:last-child{
-        background-image: url('./assets/contacto.png');
-        background-size:cover;
-        background-repeat: no-repeat;
+    .tarjeta-contacto{
+        // background-image: url('./assets/contacto.png');
+        // background-size:cover;
+        // background-repeat: no-repeat;
         position: relative;
         #logoForm {
             width: 3em;
@@ -160,16 +161,23 @@
                 }
                 img {
                     width: 100%;
+                    height: 100%;
                     object-fit: cover;
                 }
             }
         #brand-form{
             position: absolute;
+            text-align: center;
             bottom: 15px;
             left: 25%;
             right: 25%;
-            background-color:transparent;
-            background: none;
             z-index: 3;
+            .brand{
+                font-family: $artegra-family;
+                font-weight: $bold;
+                .letter-green{
+                    font-weight: $regular;
+                }
+            }
         }
 }

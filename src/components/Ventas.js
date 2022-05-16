@@ -16,7 +16,7 @@ export default function Ventas() {
                 <h1>EQUIPAMIENTO<br/> DEPORTIVO</h1>
                 <h3>Somos importadores líderes en equipamiento y accesorios deportivos.</h3>
                 <div className="catalogoMayorista">
-                    <a href="#nuestros_productos">NUESTROS PRODUCTOS</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1RCILMDSFzcldA3IlnpuFcjCP3-d8VUbjQTIjdsjWTDE/edit?usp=sharing" target="_blank">NUESTROS PRODUCTOS</a>
                 </div>
                 <div>
                     <p>PAGÁ COMO VOS QUIERAS</p>
@@ -39,7 +39,7 @@ export default function Ventas() {
                             <li><FontAwesomeIcon className="icon letter-green" icon={faCircleCheck}/>{" "} PEDIDO MÍNIMO $ 20,000</li>
                             <li><FontAwesomeIcon className="icon letter-green" icon={faCircleCheck}/>{" "} ENTREGA DESDE 10 DÍAS</li>
                         </ul>
-                        <a href="#">MÁS INFORMACIÓN</a>
+                        <a href="/catalogo#formulario">MÁS INFORMACIÓN</a>
                     </div>
 
                     <div className="calidad_precio_img">
