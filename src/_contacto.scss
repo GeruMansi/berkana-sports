@@ -1,9 +1,8 @@
-@import 'global';
-
 .seccionContacto {
     height: 125vh;
     background-image: url("./assets/contacto2.png");
     background-size: cover;
+    background-position: center;
 
     article {
         width: 100%;
@@ -18,8 +17,8 @@
             font-family: $artegra-family;
             display: flex;
             align-items: center;
-            font-size: 2.3em;
-            grid-area: logo;
+            align-self: center;
+            font-size: 2em;
     
             img {
                 width: 100px;
@@ -42,7 +41,8 @@
         .contactoFormulario {
             width: 80vw;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
             gap: 10vw;
 
             h3 {
@@ -78,9 +78,11 @@
                 border-radius: 25vh;
                 padding: .7em 2.5em;
                 cursor: pointer;
+                width: 100%;
             }
 
             .contactoInfo {
+                display: none;
                 list-style: none;
                 justify-self: center;
                 align-self: center;
@@ -88,6 +90,39 @@
                 li {
                     padding: 1em;
                     font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .seccionContacto {
+        background-position: center;
+        article {
+            .contactoFormulario {
+                button {
+                    width: 20%;
+                }
+                .contactoInfo {
+                    display: unset;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .seccionContacto {
+        background-position: center;
+        article {
+            .contactoFormulario {
+                grid-template-columns: 1fr 1fr;
+                button {
+                    width: 20%;
+                }
+                .contactoInfo {
+                    display: unset;
                 }
             }
         }

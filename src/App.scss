@@ -133,15 +133,14 @@ nav {
         padding-left: 2em;
         height: 100vh;
         width: 100vw;
-        font-size: 1.3em;
 
         li.socials {
             margin: 1em 0;
 
             svg {
                 margin: 0 20px;
-                width: 40px;
-                height: 40px;
+                width: 30px;
+                height: 30px;
             }
         }
 
@@ -608,7 +607,7 @@ footer {
     }
 }
 
-<<<<<<< HEAD
+//============ Media queries ==============
 @media screen and (max-width:768px) {
     .footer-iconos p{
         display: none;
@@ -617,9 +616,8 @@ footer {
 @media screen and (max-width:655px) {
     .categorias{
         display: none;
-    }    
-=======
-//============ Media queries ==============
+    } 
+}   
 
 @media only screen and (min-width: 768px) {
     
@@ -644,5 +642,4 @@ footer {
             }
         }
     }
->>>>>>> develop
 }
