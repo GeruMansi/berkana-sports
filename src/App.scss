@@ -426,14 +426,46 @@ header {
         text-align: center;
         margin: auto;
     }
-    margin: 0 3%;
+    margin: 1rem auto;
     padding-top: 2rem;
-    .nuestros_productos_img{
-        height:400px;
-        img{
-            margin-top: 2rem;
-            width: 350px;
-            border-radius: 30px;
+    .nuestros_productos_kit{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2em;
+        .nuestros_productos_img{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height:auto;
+            img{
+                margin-top: 2rem;
+                width: 100%;
+                border-radius: 30px;
+            }
+            h2{
+                padding: .7em;
+                border-bottom: none;
+                text-align: center;
+            }
+            a{
+                font-family: $roboto-family;
+                font-weight: $bold;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $secondary-color;
+                width: 150px;
+                padding: .5em;
+                border: 2px solid $secondary-color;
+                border-radius: 50px;
+                text-align: center;
+        
+                &:hover {
+                    background-color: $secondary-color;
+                    color: $bg-main;
+                    cursor: pointer;
+                }
+            }
         }
     }
     h2 {
@@ -444,17 +476,15 @@ header {
         text-shadow: 0 5px 10px #0009;
     }
     .calidad_precio{
-        height: 110vh;
-        margin: 10rem auto;
-        display: grid;
-        grid-template-columns: auto auto;
-        // place-items:center;
+        height: 100%;
+        margin: 10rem auto 2rem auto;
+        display: flex;
         width: 100%;
         h2{
             margin-left: 3rem;
         }
         .calidad_precio_list{
-            margin: 0 auto;
+            // margin: 0 auto;
             ul{
                 font-family: $roboto-family;
                 font-weight: 600;
@@ -462,6 +492,7 @@ header {
                 margin: 2rem 3rem;
                 li{
                     margin-top: 3rem;
+                    max-width: 100%;
                 }
                 .icon{
                     margin-right: 1rem;
@@ -487,14 +518,14 @@ header {
             border-left: #F9941D;
             position: relative;
             .desktop{
-                width: 40rem;
+                width: 30rem;
                 right: 50px;
                 z-index: 1;
             }
             .mobile{
                 position: absolute;
-                width: 35rem;
-                left: -10rem;
+                width: 25rem;
+                left: -7rem;
                 top: 10rem;
                 z-index: 2;
             }
@@ -608,19 +639,42 @@ footer {
 }
 
 //============ Media queries ==============
-@media screen and (max-width:768px) {
-    .footer-iconos p{
-        display: none;
-    }    
-}
+
 @media screen and (max-width:655px) {
     .categorias{
         display: none;
     } 
+    .header-ventas h1{
+        font-size: 2em;
+        .brand-ventas{
+            width: 70%;
+        }  
+    }
+    #nuestros_productos .calidad_precio{
+        flex-direction: column;
+        height: auto;
+    }
+    #nuestros_productos .calidad_precio_img{
+        display: none;
+    }
 }   
 
-@media only screen and (min-width: 768px) {
-    
+@media only screen and (max-width: 768px) {
+    .footer-iconos p{
+        display: none;
+    }    
+    #nuestros_productos .nuestros_productos_kit{
+        flex-direction: column;
+        img{
+            width:60%;
+        }
+    }
+}
+@media only screen and (max-width: 948px) {
+    #nuestros_productos .calidad_precio{
+        display: flex;
+        flex-direction:column-reverse;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
