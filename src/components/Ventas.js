@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "../assets/Logo.png"
-import image1 from "../assets/sogasMayorista.png"
+import body from "../assets/kitBody.png"
+import fitness from "../assets/kitFitness.png"
+import funcional from "../assets/kitFuncional.png"
 import desktop from "../assets/pesasMayorista.png"
 import mobile from "../assets/sentadillaMayorista.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,8 +29,22 @@ export default function Ventas() {
 
             <article id="nuestros_productos">
                 <h2 className="nuestros_productos_h2">nuestros productos</h2>
-                <div className="nuestros_productos_img">
-                    <img src={image1} alt='ejercicio-sogas'></img>
+                <div className="nuestros_productos_kit">
+                    <div className="nuestros_productos_img">
+                        <img src={body} alt='Kit Body'></img>
+                        <h2>kit body</h2>
+                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20te%20consulto%20por%20el%20Kit%20Body" target="_blank" rel="noopener">consultar</a>
+                    </div>
+                    <div className="nuestros_productos_img">
+                        <img src={fitness} alt='Kit Fitness'></img>
+                        <h2>kit fitness</h2>
+                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20te%20consulto%20por%20el%20Kit%20Fitness" target="_blank" rel="noopener">consultar</a>
+                    </div>
+                    <div className="nuestros_productos_img">
+                        <img src={funcional} alt='Kit Funcional'></img>
+                        <h2>kit funcional</h2>
+                        <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20te%20consulto%20por%20el%20Kit%20Funcional" target="_blank" rel="noopener">consultar</a>
+                    </div>
                 </div>
 
                 <div className="calidad_precio">

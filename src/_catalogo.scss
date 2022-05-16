@@ -7,86 +7,89 @@
     article:not(:last-child) {
         margin-bottom: 2em;
     }
-}
-
-.catalogoDescarga {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.25em;
-    height: 70vh;
-    a {
-        background-color: $primary-color;
-        color: $bg-main;
-        font-size: 1.5em;
-        font-weight: $bold;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: .75em 1.25em;
-        border-radius: 50vh;
-        cursor: pointer;
-    }
-    h2{
-        font-family: $roboto-family;
-        font-weight: $bold;
-        font-size: 2.6rem;
-    }
-    img{
-        width: 16rem;
-    }
-}
-
-.catalogoPedido {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10em;
-
-    h2 {
-        padding-bottom: .5em;
-        border-bottom: 4px solid $primary-color;
-    }
-
-    p {
-        padding: 1em;
-        text-transform: uppercase;
-    }
-
-    a {
-        text-decoration: none;
-        text-align: center;
-        font-weight: 500;
-        border-radius: 50vh;
-        display: inline-block;
-        width: 20vw;
-        margin: 2.5em;
-        padding: 1em;
-        transition:
-            color 400ms ease-in-out,
-            background-color 400ms ease-in-out;
-
-        &:hover {
-            color: $bg-main;
-        }
-    }
-
-    .catalogoWhatsapp {
-        color: $primary-color;
-        border: 2px solid $primary-color;
-
-        &:hover {
+    .catalogoDescarga {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25em;
+        height: 100%;
+        a {
             background-color: $primary-color;
+            color: $bg-main;
+            font-size: 1.5em;
+            font-weight: $bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: .75em 1.25em;
+            border-radius: 50vh;
+            cursor: pointer;
+        }
+        h2{
+            text-align: center;
+            font-family: $roboto-family;
+            font-weight: $bold;
+            font-size: 2.6rem;
+        }
+        img{
+            width: 16rem;
         }
     }
-    .catalogoMail {
-        color: $secondary-color;
-        border: 2px solid $secondary-color;
-
-        &:hover {
-            background-color: $secondary-color;
+    
+    .catalogoPedido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10em;
+        text-align: center;
+        h2 {
+            padding-bottom: .5em;
+            border-bottom: 4px solid $primary-color;
+        }
+    
+        p {
+            padding: 1em;
+            text-transform: uppercase;
+        }
+        div{
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            text-align: center;
+            font-weight: 500;
+            border-radius: 50vh;
+            display: inline-block;
+            width: 300px;
+            margin: 2.5em;
+            padding: 1em;
+            transition:
+                color 400ms ease-in-out,
+                background-color 400ms ease-in-out;
+    
+            &:hover {
+                color: $bg-main;
+            }
+        }
+    
+        .catalogoWhatsapp {
+            color: $primary-color;
+            border: 2px solid $primary-color;
+    
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+        .catalogoMail {
+            color: $secondary-color;
+            border: 2px solid $secondary-color;
+    
+            &:hover {
+                background-color: $secondary-color;
+            }
         }
     }
 }
+
 
 .catalogoFormulario {
     display: grid;
@@ -129,7 +132,7 @@
 
         button {
             padding: .5em 2em;
-            width: 12vw;
+            max-width: 150px;
             background-color: $primary-color;
             color: $bg-main;
             font-weight: 800;
@@ -143,41 +146,52 @@
         }
     }
     .tarjeta-contacto{
-        // background-image: url('./assets/contacto.png');
-        // background-size:cover;
-        // background-repeat: no-repeat;
         position: relative;
         #logoForm {
             width: 3em;
         }
         &::after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: linear-gradient(to top, rgba(44, 219, 100, 0.6) 0%, rgba(44, 219, 100, 0.18) 100%);
-                }
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-        #brand-form{
+            content: "";
             position: absolute;
-            text-align: center;
-            bottom: 15px;
-            left: 25%;
-            right: 25%;
-            z-index: 3;
-            .brand{
-                font-family: $artegra-family;
-                font-weight: $bold;
-                .letter-green{
-                    font-weight: $regular;
-                }
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(44, 219, 100, 0.6) 0%, rgba(44, 219, 100, 0.18) 100%);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    #brand-form{
+        position: absolute;
+        text-align: center;
+        bottom: 15px;
+        left: 25%;
+        right: 25%;
+        z-index: 3;
+        .brand{
+            font-family: $artegra-family;
+            font-weight: $bold;
+            .letter-green{
+                font-weight: $regular;
             }
         }
+    }
+}
+@media screen and (max-width:655px) {
+    .tarjeta-contacto{
+        display: none;
+        visibility: hidden;
+    }
+    .catalogoFormulario{
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        button{
+            align-self: center;
+        }
+    }
 }
