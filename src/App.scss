@@ -40,6 +40,7 @@ nav {
         list-style: none;
         display: flex;
         gap: 1em;
+        text-align: center;
     }
 
     a {
@@ -101,6 +102,60 @@ nav {
             }
         }
     }
+}
+.navMobile {
+    position: relative;
+
+    & > button {
+        border: none;
+        background-color: transparent;
+        color: $white-text;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5em;
+
+        &:focus {
+            color: $primary-color;
+        }
+    }
+    
+    ul {
+        position: absolute;
+        top: 95%;
+        right: -1em;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        
+        background-color: $bg-main;
+        padding: 1em;
+        padding-top: 2em;
+        padding-left: 2em;
+        height: 100vh;
+        width: 100vw;
+        font-size: 1.3em;
+
+        li.socials {
+            margin: 1em 0;
+
+            svg {
+                margin: 0 20px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        li:last-child {
+            justify-self: flex-end;
+
+            img {
+                width: 150px;
+            }
+        }
+    }
+}
+.navDesktop {
+    display: none;
 }
 
 header {
@@ -452,7 +507,8 @@ header {
 .seccionAbout {
     background-image: url('./assets/nosotros.png');
     background-position: top;
-    background-size: 110%;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 120vh;
 
     article {
@@ -466,6 +522,7 @@ header {
         gap: 4em;
 
         img {
+            display: none;
             width: 200px;
             margin-bottom: -2em;
         }
@@ -478,7 +535,7 @@ header {
         }
         
         p {
-            width: 50%;
+            width: 80%;
             text-align: center;
             text-transform: uppercase;
             line-height: 2;
@@ -551,6 +608,7 @@ footer {
     }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width:768px) {
     .footer-iconos p{
         display: none;
@@ -560,4 +618,31 @@ footer {
     .categorias{
         display: none;
     }    
+=======
+//============ Media queries ==============
+
+@media only screen and (min-width: 768px) {
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .navDesktop {
+        display: flex;
+    }
+    .navMobile {
+        display: none;
+    }
+
+    .seccionAbout {
+        article {
+            background-size: 110%;
+            img {
+                display: initial;
+            }
+            p {
+                width: 50%;
+            }
+        }
+    }
+>>>>>>> develop
 }
