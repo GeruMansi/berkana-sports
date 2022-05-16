@@ -174,8 +174,6 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    // grid-template-columns: repeat(3, 1fr);
-    // grid-template-rows: 1fr;
     align-items: center;
     gap: 2em;
 
@@ -588,6 +586,7 @@ header {
     gap: .5rem;
     font-weight: $regular;
     font-size: 1em;
+    margin-bottom: 1em;
     img {
         align-self: center;
     }
@@ -601,6 +600,8 @@ footer {
     min-height: 300px;
     width: 100%;
     margin: 2rem 0;
+    margin-bottom: 3rem;
+    padding: 1rem 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

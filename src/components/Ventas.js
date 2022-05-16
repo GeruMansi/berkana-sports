@@ -7,6 +7,7 @@ import desktop from "../assets/pesasMayorista.png"
 import mobile from "../assets/sentadillaMayorista.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function Ventas() {
     return (
@@ -55,7 +56,7 @@ export default function Ventas() {
                             <li><FontAwesomeIcon className="icon letter-green" icon={faCircleCheck}/>{" "} PEDIDO MÍNIMO $ 20,000</li>
                             <li><FontAwesomeIcon className="icon letter-green" icon={faCircleCheck}/>{" "} ENTREGA DESDE 10 DÍAS</li>
                         </ul>
-                        <a href="/catalogo#formulario">MÁS INFORMACIÓN</a>
+                        <Link to={"/catalogo#formulario"}>MÁS INFORMACIÓN</Link>
                     </div>
 
                     <div className="calidad_precio_img">
