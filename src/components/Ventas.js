@@ -53,8 +53,8 @@ export default function Ventas() {
                         <h2>LA MEJOR CALIDAD Y PRECIO</h2>
                         <ul>
                             <li><FontAwesomeIcon className="icon letter-green" icon={faCircleCheck}/>{" "} AMPLIO STOCK DE PRODUCTOS DE CALIDAD SUPERIOR TANTO NACIONALES COMO IMPORTADOS</li>
-                            <li><FontAwesomeIcon className="icon letter-green" icon={faCircleCheck}/>{" "} PEDIDO MÍNIMO $ 20,000</li>
-                            <li><FontAwesomeIcon className="icon letter-green" icon={faCircleCheck}/>{" "} ENTREGA DESDE 10 DÍAS</li>
+                            <li><FontAwesomeIcon className="icon letter-green" icon={faCircleCheck}/>{" "} PEDIDO MÍNIMO $ 50,000</li>
+                            <li><FontAwesomeIcon className="icon letter-green" icon={faCircleCheck}/>{" "} ENTREGA EN 72 HORAS</li>
                         </ul>
                         <Link to={"/catalogo#formulario"}>MÁS INFORMACIÓN</Link>
                     </div>
