@@ -18,27 +18,27 @@ export default function Contacto() {
                     <h2>contacto</h2>
                     
                     <div className="contactoFormulario">
-                        <form>
+                        <form action="https://formspree.io/f/xvolddle" method="POST">
                             <h3>ESCRIBINOS</h3>
-
+                            
                             <div className="inputContainer">
                                 <label htmlFor="formNombre">Nombre*</label>
-                                <input type={"text"} id="formNombre" required/>
+                                <input type={"text"} id="formNombre" name="formNombre" required/>
                             </div>
 
                             <div className="inputContainer">
                                 <label htmlFor="formEmail">Email*</label>
-                                <input type={"email"} id="formEmail" required/>
+                                <input type={"email"} id="formEmail" name="formEmail" required/>
                             </div>
 
                             <div className="inputContainer">
                                 <label htmlFor="formTelefono">Teléfono de contacto</label>
-                                <input type={"tel"} id="formTelefono"/>
+                                <input type={"tel"} id="formTelefono" name="formTelefono"/>
                             </div>
 
                             <div className="inputContainer">
                                 <label htmlFor="formMensaje">Mensaje</label>
-                                <textarea id="formMensaje" rows={"6"} required/>
+                                <textarea id="formMensaje" name="formMensaje" rows={"6"} required/>
                             </div>
 
                             <button>Enviar</button>

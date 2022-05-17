@@ -25,28 +25,28 @@ export default function Catalogo() {
                 </article>
 
                 <article className="catalogoFormulario" id="formulario">
-                    <form>
+                    <form action="https://formspree.io/f/mzbylbvr" method="POST">
                         <h3>FORMULARIO ONLINE</h3>
                         <p>Completá la siguiente información</p>
 
                         <div className="inputContainer">
                             <label htmlFor="formNombre">Nombre*</label>
-                            <input type={"text"} id="formNombre" required/>
+                            <input type={"text"} id="formNombre" name="formNombre" required/>
                         </div>
 
                         <div className="inputContainer">
                             <label htmlFor="formEmail">Email*</label>
-                            <input type={"email"} id="formEmail" required/>
+                            <input type={"email"} id="formEmail" name="formEmail" required/>
                         </div>
 
                         <div className="inputContainer">
                             <label htmlFor="formTelefono">Teléfono de contacto</label>
-                            <input type={"tel"} id="formTelefono"/>
+                            <input type={"tel"} id="formTelefono" name="formTelefono"/>
                         </div>
 
                         <div className="inputContainer">
                             <label htmlFor="formMensaje">Mensaje</label>
-                            <textarea id="formMensaje"/>
+                            <textarea id="formMensaje" name="formMensaje"/>
                         </div>
 
                         <button>cotizar</button>
