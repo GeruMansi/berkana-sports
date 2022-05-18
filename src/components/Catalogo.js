@@ -52,7 +52,7 @@ export default function Catalogo() {
 
                         <div className="inputContainer">
                             <label htmlFor="formMensaje">Mensaje</label>
-                            <textarea id="formMensaje" name="message"/>
+                            <textarea id="formMensaje" name="message" rows="6"/>
                         </div>
 
                         <button type="submit" disabled={state.submitting}>cotizar</button>

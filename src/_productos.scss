@@ -50,3 +50,49 @@
     align-items: center;
     gap: 1rem;
 }
+
+.cardProductos {
+    width: 180px;
+    height: 300px;
+    padding: .2em;
+    background-color: $white-text;
+    color: $bg-main;
+    text-align: center;
+    border-radius: 4px;
+    transform: scale(.95);
+    transition: transform 100ms ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    a {
+        display: none;
+        background-color: $bg-main;
+        border-radius: inherit;
+        height: 45px;
+        color: $white-text;
+        text-decoration: none;
+        font-weight: 700;
+
+        display: grid;
+        place-items: center;
+        &:hover{
+            color: #2cdb69;
+        }
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .cardProductos {
+        a {
+            opacity: 0;
+        }
+        &:hover a {
+            opacity: 1;
+        }
+    }
+}
