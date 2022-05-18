@@ -3,8 +3,14 @@ import logo from '../assets/Logo.png'
 import logoicon from '../assets/logoNavbar.png'
 import imgContacto from '../assets/contacto.png'
 import pdf from "../assets/Catalogo BERKANA SPORTS.pdf"
+import { useForm } from '@formspree/react';
+import { Link } from "react-router-dom";
 
 export default function Catalogo() {
+    const [state, handleSubmit] = useForm("mzbylbvr");
+    if (state.succeeded) {
+        return <div className="legend-form"><p className="letter-green">Gracias por contactar! </p><Link to={'/'}>Volver</Link></div>;
+    }
     return (
         <>
             <section className="seccionCatalogo">
@@ -25,31 +31,31 @@ export default function Catalogo() {
                 </article>
 
                 <article className="catalogoFormulario" id="formulario">
-                    <form action="https://formspree.io/f/mzbylbvr" method="POST">
+                    <form onSubmit={handleSubmit}>
                         <h3>FORMULARIO ONLINE</h3>
                         <p>Completá la siguiente información</p>
 
                         <div className="inputContainer">
                             <label htmlFor="formNombre">Nombre*</label>
-                            <input type={"text"} id="formNombre" name="formNombre" required/>
+                            <input type={"text"} id="formNombre" name="name" required/>
                         </div>
 
                         <div className="inputContainer">
                             <label htmlFor="formEmail">Email*</label>
-                            <input type={"email"} id="formEmail" name="formEmail" required/>
+                            <input type={"email"} id="formEmail" name="email" required/>
                         </div>
 
                         <div className="inputContainer">
                             <label htmlFor="formTelefono">Teléfono de contacto</label>
-                            <input type={"tel"} id="formTelefono" name="formTelefono"/>
+                            <input type={"tel"} id="formTelefono" name="tel"/>
                         </div>
 
                         <div className="inputContainer">
                             <label htmlFor="formMensaje">Mensaje</label>
-                            <textarea id="formMensaje" name="formMensaje"/>
+                            <textarea id="formMensaje" name="message"/>
                         </div>
 
-                        <button>cotizar</button>
+                        <button type="submit" disabled={state.submitting}>cotizar</button>
                     </form>
 
                     <div className="tarjeta-contacto">

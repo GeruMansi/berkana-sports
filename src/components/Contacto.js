@@ -4,8 +4,15 @@ import logo from "../assets/Logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { useForm, ValidationError } from '@formspree/react';
+import { Link } from "react-router-dom";
 
 export default function Contacto() {
+    const [state, handleSubmit] = useForm("xvolddle");
+    if (state.succeeded) {
+        return <div className="legend-form"><p className="letter-green">Gracias por contactar! </p><Link to={'/'}>Volver</Link></div>;
+    }
+    
     return (
         <>
             <section className="seccionContacto">
@@ -18,30 +25,40 @@ export default function Contacto() {
                     <h2>contacto</h2>
                     
                     <div className="contactoFormulario">
-                        <form action="https://formspree.io/f/xvolddle" method="POST">
+                        <form onSubmit={handleSubmit}>
                             <h3>ESCRIBINOS</h3>
                             
                             <div className="inputContainer">
                                 <label htmlFor="formNombre">Nombre*</label>
-                                <input type={"text"} id="formNombre" name="formNombre" required/>
+                                <input type="text" id="formNombre" name="name" required/>
                             </div>
 
                             <div className="inputContainer">
                                 <label htmlFor="formEmail">Email*</label>
-                                <input type={"email"} id="formEmail" name="formEmail" required/>
+                                <input type="email" id="formEmail" name="email" required/> 
+                                <ValidationError 
+                                    prefix="Email" 
+                                    field="email"
+                                    errors={state.errors}
+                                />                               
                             </div>
 
                             <div className="inputContainer">
                                 <label htmlFor="formTelefono">Teléfono de contacto</label>
-                                <input type={"tel"} id="formTelefono" name="formTelefono"/>
+                                <input type="tel" id="formTelefono" name="tel"/>
                             </div>
 
                             <div className="inputContainer">
                                 <label htmlFor="formMensaje">Mensaje</label>
-                                <textarea id="formMensaje" name="formMensaje" rows={"6"} required/>
+                                <textarea id="formMensaje" name="message" rows={"6"} required/>
+                                <ValidationError 
+                                    prefix="Message" 
+                                    field="message"
+                                    errors={state.errors}
+                                />
                             </div>
 
-                            <button>Enviar</button>
+                            <button type="submit" disabled={state.submitting}>Enviar</button>
                         </form>
 
                         <ul className="contactoInfo">

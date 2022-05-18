@@ -95,7 +95,27 @@
         }
     }
 }
-
+.legend-form{
+    font-family: $roboto-family;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10%;
+    p{margin: 22px;}
+    a{
+        text-decoration: none;
+        font-weight: $bold;
+        background-color: $secondary-color;
+        border-radius: 10vw;
+        padding: 12px;
+        color: $bg-main;
+        &:hover{
+            background-color: transparent;
+            border: 2px solid $secondary-color;
+            color: $secondary-color;
+        }
+    }
+}
 @media only screen and (min-width: 768px) {
     .seccionContacto {
         background-position: center;
