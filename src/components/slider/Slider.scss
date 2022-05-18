@@ -38,11 +38,13 @@ b{
 
 .content {
     position: absolute;
+    text-align: center;
     font-family: $roboto-family;
     font-weight: $black;
     font-size: 2rem;
-    top:10rem;
-    left: 5rem;
+    // top:10rem;
+    left: -50%;
+    right: -50%;
     opacity: 0;
     // width: 50%;
     text-transform: uppercase;
@@ -62,11 +64,17 @@ b{
         top: 10rem;
     }
 }
-
+@media screen and (max-width: 768px) {
+    .content {
+        font-size: 15pt;
+    }
+}
 @media screen and (max-width: 600px) {
     .content {
-        width: 80%;
-        font-size: 15pt;
+        font-size: 10pt;
+        h2{
+            text-justify: auto;
+        }
     }
 }
 
