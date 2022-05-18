@@ -22,7 +22,7 @@ export default function Catalogo() {
 
                 <article className="catalogoPedido">
                     <h2>HACENOS TU PEDIDO</h2>
-                    <p>completá el formulario online o contactanos a través de los siguientes canales</p>
+                    <p>envianos un formulario online o contactate a través de los siguientes canales</p>
                     <div>
                         <a href="https://api.whatsapp.com/send?phone=5491172320149&text=Hola%20me%20contacto%20para%20obtener%20el%20catalogo" target="_blank" rel="noreferrer noopener" className="catalogoWhatsapp">WhatsApp</a>
                         <a href="mailto:berkana.sports@gmail.com?
@@ -33,7 +33,7 @@ export default function Catalogo() {
                 <article className="catalogoFormulario" id="formulario">
                     <form onSubmit={handleSubmit}>
                         <h3>FORMULARIO ONLINE</h3>
-                        <p>Completá la siguiente información</p>
+                        <p>Completá la siguiente información:</p>
 
                         <div className="inputContainer">
                             <label htmlFor="formNombre">Nombre*</label>

@@ -553,7 +553,7 @@ header {
     gap: .5rem;
     font-weight: $regular;
     font-size: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 8em;
     img {
         align-self: center;
     }
@@ -561,6 +561,9 @@ header {
         font-family:$artegra-family;
         font-weight: $bold;
         font-size: 1.3rem;
+        b{
+            font-weight: $regular;
+        }
     }
 }
 footer {
