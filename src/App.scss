@@ -4,6 +4,7 @@
 @import "contacto";
 @import "./components/carousel/cardDestacado";
 @import "./whatsapp";
+@import "./gracias";
 
 body {
     background-color: $bg-main;
@@ -21,7 +22,7 @@ nav {
     p{
         font-family: $artegra-family;
         font-size: 1.5em;
-        font-weight: $medium;
+        font-weight: $bold;
         display: flex;
         align-items: center;
 
@@ -33,6 +34,7 @@ nav {
 
         b {
             margin-left: 5px;
+            font-weight: $regular;
         }
     }
     ul {
@@ -359,7 +361,7 @@ header {
         }
         img{
             width: 4.6rem;
-            bottom: -3pt;
+            transform: translateY(-5px);
         }
     }
     .catalogoMayorista{
@@ -379,8 +381,7 @@ header {
             font-weight: $bold;
             width: 100%;
             height: 100%;
-            padding: 1.5em 2em;
-            vertical-align: baseline;
+            padding: 1.5em 1em;
             color: black;
             z-index: 3999;
         }
@@ -623,10 +624,18 @@ footer {
     .categorias{
         display: none;
     } 
-    .header-ventas h1{
-        font-size: 2em;
+    .header-ventas{
+        margin-top: 4rem;
+        h1{
+            font-size: 2em;
+        }
         .brand-ventas{
-            width: 70%;
+            h2{
+                font-size: 2rem;
+            }
+            img{
+                width: 3rem;
+            }
         }  
     }
     #nuestros_productos .calidad_precio{
@@ -655,7 +664,11 @@ footer {
         flex-direction:column-reverse;
     }
 }
-
+@media only screen and (max-width: 1024px) {
+    .header-ventas{
+        margin-top: 4rem;
+    }
+}
 @media only screen and (min-width: 1024px) {
     .navDesktop {
         display: flex;

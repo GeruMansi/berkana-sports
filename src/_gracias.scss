@@ -1,0 +1,14 @@
+.gracias{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 5%;
+  font-family: $roboto-family;
+  img{
+    width: 6rem;
+    margin: 2rem 0;
+  }
+}

@@ -5,14 +5,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { useForm, ValidationError } from '@formspree/react';
-import { Link } from "react-router-dom";
+// import Gracias from "./Gracias";
+import { Redirect } from "react-router-dom";
+
 
 export default function Contacto() {
+ 
     const [state, handleSubmit] = useForm("xvolddle");
     if (state.succeeded) {
-        return <div className="legend-form"><p className="letter-green">Gracias por contactar! </p><Link to={'/'}>Volver</Link></div>;
+        return <Redirect to="/" />;
     }
-    
+
     return (
         <>
             <section className="seccionContacto">
@@ -60,6 +63,7 @@ export default function Contacto() {
 
                             <button type="submit" disabled={state.submitting}>Enviar</button>
                         </form>
+                        
 
                         <ul className="contactoInfo">
                             <li><FontAwesomeIcon icon={faEnvelope} /> berkana.sports@gmail.com</li>

@@ -1,7 +1,7 @@
 @import "global";
 
 .seccionProductos {
-    padding: 2rem;
+    padding: .5rem;
     
     h1 {
         margin-bottom: 2rem;
@@ -18,7 +18,7 @@
 
         margin: auto;
         margin-bottom: 2rem;
-        width: 80vw;
+        max-width: 60vw;
         text-align: center;
 
         li {
@@ -87,6 +87,9 @@
     }
 }
 @media only screen and (min-width: 1024px) {
+    .seccionProductos{
+        padding: 2rem;
+    }
     .cardProductos {
         a {
             opacity: 0;
