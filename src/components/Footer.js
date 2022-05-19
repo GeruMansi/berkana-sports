@@ -40,7 +40,7 @@ export default function Footer() {
                 </ul>
             </div>
             <div className="copyrightFooter">
-            <p><b className="letter-green">BerkanaSports &copy;</b> Diseño web por <a href="https://github.com/GeruMansi" target="_blank">German</a>, <a href="https://jorge.osses.ar" target="_blank">Jorge</a> y <a href="https://www.behance.net/barrerapaula" target="_blank">Paula</a></p>
+            <p><b className="letter-green">BerkanaSports &copy; 2022 </b>- Diseño web por <a href="https://github.com/GeruMansi" target="_blank">German</a>, <a href="https://jorge.osses.ar" target="_blank">Jorge</a> y <a href="https://www.behance.net/barrerapaula" target="_blank">Paula</a></p>
             </div>
         </footer>
     )
