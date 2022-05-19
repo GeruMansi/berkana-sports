@@ -114,18 +114,18 @@ export default class MultipleItems extends Component {
             infinite: true,
             dots: false
           }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            className:"center",
-            centerMode: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            // infinite: true,
-            dots: false
-          }
-        }
+        }//,
+        // {
+        //   breakpoint: 480,
+        //   settings: {
+        //     className:"center",
+        //     centerMode: true,
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1,
+        //     // infinite: true,
+        //     dots: false
+        //   }
+        // }
       ]
     };
     return (

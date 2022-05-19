@@ -48,7 +48,12 @@
 .carouselContainerSlide{
   margin: 0 auto;
 }
-
+@media only screen and (max-width: 480px){
+  .cardDestacado{
+    width: auto;
+    margin: 0 4px;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .cardDestacado {
     a {
