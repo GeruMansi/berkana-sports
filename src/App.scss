@@ -48,7 +48,7 @@ nav {
         color: inherit;
         text-decoration: none;
 
-        &:hover {
+        &:not(.navbarLogoLink):hover {
             color: $primary-color;
         }
         .icon{
@@ -109,8 +109,7 @@ nav {
     top: 0;
     left: 0;
     background-color: $bg-main;
-    width: 100vw; 
-    margin-bottom: 72px;
+    width: 100vw;
 
     & > button {
         border: none;
@@ -165,10 +164,15 @@ nav {
 
 header {
     bottom: 150px;
+    margin-top: 75px;
 }
 
 .letter-green {
     color: $primary-color;
+}
+
+section:not(.features) {
+    margin-top: 75px;
 }
 
 //====== FEATURES =======//
@@ -456,6 +460,7 @@ header {
                 font-weight: 600;
                 list-style: none;
                 margin: 2rem 3rem;
+                margin-bottom: 3.75rem;
                 li{
                     margin-top: 3rem;
                     max-width: 100%;
@@ -555,6 +560,7 @@ header {
     font-weight: $regular;
     font-size: 1em;
     margin-bottom: 8em;
+    padding-top: 2.5em;
     img {
         align-self: center;
     }
@@ -645,8 +651,7 @@ footer {
     #nuestros_productos .calidad_precio_img{
         display: none;
     }
-}   
-
+}
 @media only screen and (max-width: 768px) {
     .footer-iconos p{
         display: none;
@@ -669,7 +674,23 @@ footer {
         margin-top: 4rem;
     }
 }
+@media only screen and (min-width: 768px) {
+    .seccionAbout {
+        article {
+            img {
+                display: initial;
+            }
+            p {
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 1024px) {
+    section:not(.features) {
+        margin-top: 0;
+    }
     .navDesktop {
         display: flex;
     }
@@ -680,12 +701,6 @@ footer {
     .seccionAbout {
         article {
             background-size: 110%;
-            img {
-                display: initial;
-            }
-            p {
-                width: 50%;
-            }
         }
     }
 }

@@ -51,7 +51,7 @@ export default function Navbar() {
             </nav>
 
             <nav className='navMobile'>
-                <p><img src={logo} alt="logo" />{' '}Berkana <b className="letter-green">Sports</b></p>
+                <Link exact to={'/'} className="navbarLogoLink" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}><p><img src={logo} alt="logo" />{' '}Berkana <b className="letter-green">Sports</b></p></Link>
                 <button onClick={() => {
                         setNavbarDesplegada(!navbarDesplegada)
                     }}><FontAwesomeIcon icon={faBars}/></button>
@@ -60,12 +60,36 @@ export default function Navbar() {
                     <ul onClick={() => {
                         setNavbarDesplegada(!navbarDesplegada)
                     }}>
-                        <li><NavLink exact to={'/'} activeClassName="currentRoute">INICIO</NavLink></li>
-                        <li><NavLink to={'/productos'} activeClassName="currentRoute">PRODUCTOS</NavLink></li>
-                        <li><NavLink to={'/catalogo'} activeClassName="currentRoute">CATÁLOGO</NavLink></li>
-                        <li><NavLink to={'/quienes-somos'} activeClassName="currentRoute">QUIÉNES SOMOS</NavLink></li>
-                        <li><NavLink to={'/ventas-mayoristas'} activeClassName="currentRoute">VENTAS MAYORISTAS</NavLink></li>
-                        <li><NavLink to={'/contacto-envios'} activeClassName="currentRoute">CONTACTO Y ENVÍOS</NavLink></li>
+                        <li onClick={() => {
+                            window.scrollTo({
+                                top: 0
+                            })
+                        }}><NavLink exact to={'/'} activeClassName="currentRoute">INICIO</NavLink></li>
+                        <li onClick={() => {
+                            window.scrollTo({
+                                top: 0
+                            })
+                        }}><NavLink to={'/productos'} activeClassName="currentRoute">PRODUCTOS</NavLink></li>
+                        <li onClick={() => {
+                            window.scrollTo({
+                                top: 0
+                            })
+                        }}><NavLink to={'/catalogo'} activeClassName="currentRoute">CATÁLOGO</NavLink></li>
+                        <li onClick={() => {
+                            window.scrollTo({
+                                top: 0
+                            })
+                        }}><NavLink to={'/quienes-somos'} activeClassName="currentRoute">QUIÉNES SOMOS</NavLink></li>
+                        <li onClick={() => {
+                            window.scrollTo({
+                                top: 0
+                            })
+                        }}><NavLink to={'/ventas-mayoristas'} activeClassName="currentRoute">VENTAS MAYORISTAS</NavLink></li>
+                        <li onClick={() => {
+                            window.scrollTo({
+                                top: 0
+                            })
+                        }}><NavLink to={'/contacto-envios'} activeClassName="currentRoute">CONTACTO Y ENVÍOS</NavLink></li>
                         <li className='socials'>
                             <a href='https://instagram.com/berkana_sports' target={'_blank'} rel="noreferrer"><FontAwesomeIcon className="icon" icon={faInstagram} />{' '}</a>
                             <a href='https://facebook.com/berkana.sports' target={'_blank'} rel="noreferrer"><FontAwesomeIcon className="icon" icon={faFacebookSquare} /></a>

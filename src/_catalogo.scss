@@ -20,6 +20,7 @@
             font-weight: $bold;
             text-transform: uppercase;
             text-decoration: none;
+            margin-top: 1em;
             padding: .75em 1.25em;
             border-radius: 50vh;
             cursor: pointer;
@@ -97,14 +98,11 @@
     grid-template-rows: 1fr;
     gap: 2em;
     font-family: $roboto-family;
-    padding: 2em;
 
     form {
         display: flex;
         flex-direction: column;
         gap: 1.2em;
-        
-        padding: 1em;
 
         p {
             margin-bottom: .7em;
@@ -191,13 +189,21 @@
     .catalogoFormulario{
         display: flex;
         justify-content: center;
-        padding: 1em;
         button{
             align-self: center;
         }
         form{
             gap: .5em;
             width: 80vw;
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .catalogoFormulario {
+        padding: 2em;
+
+        form {
+            padding: 1em;
         }
     }
 }
