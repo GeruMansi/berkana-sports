@@ -107,10 +107,10 @@ export default class MultipleItems extends Component {
           breakpoint: 650,
           settings: {
             className:"center",
-            centerMode: true, 
+            // centerMode: true, 
             slidesToShow: 2,
             slidesToScroll: 2,
-            initialSlide: 2,
+            // initialSlide: 2,
             infinite: true,
             dots: false
           }

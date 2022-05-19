@@ -569,9 +569,7 @@ header {
 footer {
     min-height: 300px;
     width: 100%;
-    margin: 2rem 0;
-    margin-bottom: 3rem;
-    padding: 1rem 3rem;
+    margin: 2rem 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -605,6 +603,16 @@ footer {
             a:hover{
                 color: $primary-color;
             }
+        }
+    }
+    .copyrightFooter{
+        margin: 2rem 0;
+        text-align: center;
+        padding: .5rem 0;
+        background-color: $bg-second;
+        a{
+            text-decoration: none;
+            color: inherit;
         }
     }
 }
