@@ -10,7 +10,7 @@ import Gracias from "./Gracias";
 
 export default function Contacto() {
  
-    const [state, handleSubmit] = useForm("xvolddle");
+    const [state, handleSubmit] = useForm("mbjwqvke");
     if (state.succeeded) {
         return <Gracias />;
     }

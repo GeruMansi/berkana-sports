@@ -8,7 +8,7 @@ import Gracias from "./Gracias";
 // import { Redirect } from "react-router-dom";
 
 export default function Catalogo() {
-    const [state, handleSubmit] = useForm("mzbylbvr");
+    const [state, handleSubmit] = useForm("xnqwlkzk");
     if (state.succeeded) {
         return <Gracias />
     }
