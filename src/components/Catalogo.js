@@ -4,13 +4,13 @@ import logoicon from '../assets/logoNavbar.png'
 import imgContacto from '../assets/contacto.png'
 import pdf from "../assets/Catalogo BERKANA SPORTS.pdf"
 import { useForm } from '@formspree/react';
-// import { Link } from "react-router-dom";
-import { Redirect } from "react-router-dom";
+import Gracias from "./Gracias";
+// import { Redirect } from "react-router-dom";
 
 export default function Catalogo() {
     const [state, handleSubmit] = useForm("mzbylbvr");
     if (state.succeeded) {
-        return <Redirect to="/" />;
+        return <Gracias />
     }
     return (
         <>

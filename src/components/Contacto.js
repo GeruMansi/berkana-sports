@@ -5,15 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { useForm, ValidationError } from '@formspree/react';
-// import Gracias from "./Gracias";
-import { Redirect } from "react-router-dom";
+import Gracias from "./Gracias";
 
 
 export default function Contacto() {
  
     const [state, handleSubmit] = useForm("xvolddle");
     if (state.succeeded) {
-        return <Redirect to="/" />;
+        return <Gracias />;
     }
 
     return (

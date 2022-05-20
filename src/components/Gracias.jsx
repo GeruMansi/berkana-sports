@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import check from "../assets/check.png"
-// import { Redirect } from "react-router-dom";
+import { useHistory } from 'react-router-dom'
 
 const Gracias = () => {
-  // setTimeout(() => {
-  //   <Redirect to="/" />
-  // }, 5000);
+
+  const history = useHistory()
+  
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+    setTimeout(() => {
+      history.push('/')
+    }, 3000)
+  })
+
   return (
     <section className="gracias">
       <img src={check} alt="logo check"></img>
